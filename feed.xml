@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Collecting Thoughts</title>
-    <link href="https://blog.fexcollects.com/feed.xml" rel="self" />
-    <link href="https://blog.fexcollects.com" />
+    <link href="https://fexcollects.com/feed.xml" rel="self" />
+    <link href="https://fexcollects.com" />
     <updated>2026-03-05T22:19:28-07:00</updated>
     <author>
         <name>FexCollects</name>
     </author>
-    <id>https://blog.fexcollects.com</id>
+    <id>https://fexcollects.com</id>
 
     <entry>
         <title>Shiny Hunts</title>
         <author>
             <name>FexCollects</name>
         </author>
-        <link href="https://blog.fexcollects.com/posts/my-current-hunts/"/>
-        <id>https://blog.fexcollects.com/posts/my-current-hunts/</id>
+        <link href="https://fexcollects.com/posts/my-current-hunts/"/>
+        <id>https://fexcollects.com/posts/my-current-hunts/</id>
 
         <updated>2026-03-05T21:48:30-07:00</updated>
             <summary type="html">
@@ -88,8 +88,8 @@
         <author>
             <name>FexCollects</name>
         </author>
-        <link href="https://blog.fexcollects.com/posts/notes/"/>
-        <id>https://blog.fexcollects.com/posts/notes/</id>
+        <link href="https://fexcollects.com/posts/notes/"/>
+        <id>https://fexcollects.com/posts/notes/</id>
 
         <updated>2026-03-05T21:38:05-07:00</updated>
             <summary type="html">
@@ -131,8 +131,8 @@
         <author>
             <name>FexCollects</name>
         </author>
-        <link href="https://blog.fexcollects.com/posts/test-post/"/>
-        <id>https://blog.fexcollects.com/posts/test-post/</id>
+        <link href="https://fexcollects.com/posts/test-post/"/>
+        <id>https://fexcollects.com/posts/test-post/</id>
 
         <updated>2026-03-05T19:03:08-07:00</updated>
             <summary type="html">
@@ -164,17 +164,17 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://blog.fexcollects.com/media/posts/3/Screenshot-2026-03-05-at-9.19.15-PM.png" height="626" width="1186" alt="image of a NDS Pokemon game booting with a broken save chip"  sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.fexcollects.com/media/posts/3/responsive/Screenshot-2026-03-05-at-9.19.15-PM-xs.png 300w ,https://blog.fexcollects.com/media/posts/3/responsive/Screenshot-2026-03-05-at-9.19.15-PM-sm.png 480w ,https://blog.fexcollects.com/media/posts/3/responsive/Screenshot-2026-03-05-at-9.19.15-PM-md.png 768w ,https://blog.fexcollects.com/media/posts/3/responsive/Screenshot-2026-03-05-at-9.19.15-PM-lg.png 1024w">
+      <img loading="lazy" src="https://fexcollects.com/media/posts/3/Screenshot-2026-03-05-at-9.19.15-PM.png" height="626" width="1186" alt="image of a NDS Pokemon game booting with a broken save chip"  sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://fexcollects.com/media/posts/3/responsive/Screenshot-2026-03-05-at-9.19.15-PM-xs.png 300w ,https://fexcollects.com/media/posts/3/responsive/Screenshot-2026-03-05-at-9.19.15-PM-sm.png 480w ,https://fexcollects.com/media/posts/3/responsive/Screenshot-2026-03-05-at-9.19.15-PM-md.png 768w ,https://fexcollects.com/media/posts/3/responsive/Screenshot-2026-03-05-at-9.19.15-PM-lg.png 1024w">
       
     </figure>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://blog.fexcollects.com/media/posts/3/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq.jpg" height="2000" width="1500" alt="Photo of spare repair chips for gen 4 and 5 Pokemon games "  sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.fexcollects.com/media/posts/3/responsive/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq-xs.jpg 300w ,https://blog.fexcollects.com/media/posts/3/responsive/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq-sm.jpg 480w ,https://blog.fexcollects.com/media/posts/3/responsive/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq-md.jpg 768w ,https://blog.fexcollects.com/media/posts/3/responsive/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq-lg.jpg 1024w">
+      <img loading="lazy" src="https://fexcollects.com/media/posts/3/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq.jpg" height="2000" width="1500" alt="Photo of spare repair chips for gen 4 and 5 Pokemon games "  sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://fexcollects.com/media/posts/3/responsive/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq-xs.jpg 300w ,https://fexcollects.com/media/posts/3/responsive/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq-sm.jpg 480w ,https://fexcollects.com/media/posts/3/responsive/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq-md.jpg 768w ,https://fexcollects.com/media/posts/3/responsive/bafkreifjowpqokhnpo6sklkxbj42rsryp6lwikza5rrefecoksn7svmfaq-lg.jpg 1024w">
       
     </figure>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://blog.fexcollects.com/media/posts/3/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy.jpg" height="2000" width="1500" alt="Photo of spare repair chips for gen 4 and 5 Pokemon games "  sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://blog.fexcollects.com/media/posts/3/responsive/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy-xs.jpg 300w ,https://blog.fexcollects.com/media/posts/3/responsive/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy-sm.jpg 480w ,https://blog.fexcollects.com/media/posts/3/responsive/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy-md.jpg 768w ,https://blog.fexcollects.com/media/posts/3/responsive/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy-lg.jpg 1024w">
+      <img loading="lazy" src="https://fexcollects.com/media/posts/3/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy.jpg" height="2000" width="1500" alt="Photo of spare repair chips for gen 4 and 5 Pokemon games "  sizes="(min-width: 920px) 703px, (min-width: 700px) calc(82vw - 35px), calc(100vw - 81px)" srcset="https://fexcollects.com/media/posts/3/responsive/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy-xs.jpg 300w ,https://fexcollects.com/media/posts/3/responsive/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy-sm.jpg 480w ,https://fexcollects.com/media/posts/3/responsive/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy-md.jpg 768w ,https://fexcollects.com/media/posts/3/responsive/bafkreibe5xhzxpy4v3kumt64susgzk5qjy5q4mi2roqw7vnkaaht53baqy-lg.jpg 1024w">
       
     </figure>
             ]]>
