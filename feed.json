@@ -2,8 +2,8 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Collecting Thoughts",
     "description": "",
-    "home_page_url": "https://fexcollects.github.io/gh-pages",
-    "feed_url": "https://fexcollects.github.io/gh-pages/feed.json",
+    "home_page_url": "https://blog.fexcollects.com",
+    "feed_url": "https://blog.fexcollects.com/feed.json",
     "user_comment": "",
     "author": {
         "name": "FexCollects"
