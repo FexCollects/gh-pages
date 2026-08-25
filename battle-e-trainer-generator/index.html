@@ -1,0 +1,960 @@
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Battle-e Trainer Generator - Collecting Thoughts</title><meta name="description" content="Trainer Info Name Class TID SID Intro Message Victory Message Defeat Message Pokemon 1 Info Species Nickname Level Held Item Ability Moves PP Ups OT&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://fexcollects.com/battle-e-trainer-generator/"><link rel="alternate" type="application/atom+xml" href="https://fexcollects.com/feed.xml" title="Collecting Thoughts - RSS"><link rel="alternate" type="application/json" href="https://fexcollects.com/feed.json" title="Collecting Thoughts - JSON"><meta property="og:title" content="Battle-e Trainer Generator"><meta property="og:image" content="https://fexcollects.com/media/website/logo.png"><meta property="og:image:width" content="500"><meta property="og:image:height" content="500"><meta property="og:site_name" content="Collecting Thoughts"><meta property="og:description" content="Trainer Info Name Class TID SID Intro Message Victory Message Defeat Message Pokemon 1 Info Species Nickname Level Held Item Ability Moves PP Ups OT&hellip;"><meta property="og:url" content="https://fexcollects.com/battle-e-trainer-generator/"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://fexcollects.com/media/website/favicon.png" type="image/png"><link rel="stylesheet" href="https://fexcollects.com/assets/css/style.css?v=8ac97a0ba044173d3e7ace919ff825a7"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://fexcollects.com/battle-e-trainer-generator/"},"headline":"Battle-e Trainer Generator","datePublished":"2026-08-24T17:56-06:00","dateModified":"2026-08-24T18:03-06:00","image":{"@type":"ImageObject","url":"https://fexcollects.com/media/website/logo-3.png","height":500,"width":500},"description":"Trainer Info Name Class TID SID Intro Message Victory Message Defeat Message Pokemon 1 Info Species Nickname Level Held Item Ability Moves PP Ups OT&hellip;","author":{"@type":"Person","name":"FexCollects","url":"https://fexcollects.com/authors/fexcollects/"},"publisher":{"@type":"Organization","name":"FexCollects","logo":{"@type":"ImageObject","url":"https://fexcollects.com/media/website/logo-3.png","height":500,"width":500}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="page-template"><div class="container"><header class="header"><div class="header__logo"><a class="logo" href="https://fexcollects.com/"><img src="https://fexcollects.com/media/website/logo-3.png" alt="Collecting Thoughts" width="500" height="500"></a></div><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"></ul></nav></header><main class="content page"><article class="post"><header><h1 class="post__title">Battle-e Trainer Generator</h1></header><div class="post__entry"><form id="root_form"><h3>Trainer Info</h3><div><label for="trainer_name">Name</label> <input type="text" id="trainer_name" name="trainer_name" placeholder="Blue" required="" minlength="1" maxlength="7"></div><div><label for="trainer_class">Class</label><select id="trainer_class" name="trainer_class" required=""></select></div><div><label for="trainer_tid">TID</label> <input type="number" id="trainer_tid" name="trainer_tid" placeholder="00000" required="" min="0" max="65535"></div><div><label for="trainer_sid">SID</label> <input type="number" id="trainer_sid" name="trainer_sid" placeholder="65535" required="" min="0" max="65535"></div><div><label for="intro_1_6">Intro Message</label><select id="intro_1_6" name="intro_1_6" required=""></select><select id="intro_2_6" name="intro_2_6" required=""></select><select id="intro_3_6" name="intro_3_6" required=""></select><select id="intro_4_6" name="intro_4_6" required=""></select><select id="intro_5_6" name="intro_5_6" required=""></select><select id="intro_6_6" name="intro_6_6" required=""></select></div><div><label for="victory_1_6">Victory Message</label><select id="victory_1_6" name="victory_1_6" required=""></select><select id="victory_2_6" name="victory_2_6" required=""></select><select id="victory_3_6" name="victory_3_6" required=""></select><select id="victory_4_6" name="victory_4_6" required=""></select><select id="victory_5_6" name="victory_5_6" required=""></select><select id="victory_6_6" name="victory_6_6" required=""></select></div><div><label for="defeat_1_6">Defeat Message</label><select id="defeat_1_6" name="defeat_1_6" required=""></select><select id="defeat_2_6" name="defeat_2_6" required=""></select><select id="defeat_3_6" name="defeat_3_6" required=""></select><select id="defeat_4_6" name="defeat_4_6" required=""></select><select id="defeat_5_6" name="defeat_5_6" required=""></select><select id="defeat_6_6" name="defeat_6_6" required=""></select></div><h3>Pokemon 1 Info</h3><div><label for="pokemon_1_species">Species</label><select id="pokemon_1_species" name="pokemon_1_species" required=""></select></div><div><label for="pokemon_1_nickname">Nickname</label> <input type="text" id="pokemon_1_nickname" name="pokemon_1_nickname" minlength="1" maxlength="10"></div><div><label for="pokemon_1_level">Level</label> <input type="number" id="pokemon_1_level" name="pokemon_1_level" value="1" required="" min="1" max="100"></div><div><label for="pokemon_1_held_item">Held Item</label><select id="pokemon_1_held_item" name="pokemon_1_held_item" required=""></select></div><div><label for="pokemon_1_ability">Ability</label><select id="pokemon_1_ability" name="pokemon_1_ability" required=""></select></div><div><label for="pokemon_1_move_1">Moves</label><select id="pokemon_1_move_1" name="pokemon_1_move_1" required=""></select><select id="pokemon_1_move_2" name="pokemon_1_move_2" required=""></select><select id="pokemon_1_move_3" name="pokemon_1_move_3" required=""></select><select id="pokemon_1_move_4" name="pokemon_1_move_4" required=""></select></div><div><label for="pokemon_1_move_1_pp_ups">PP Ups</label> <input type="number" id="pokemon_1_move_1_pp_ups" name="pokemon_1_move_1_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_1_move_2_pp_ups" name="pokemon_1_move_2_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_1_move_3_pp_ups" name="pokemon_1_move_3_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_1_move_4_pp_ups" name="pokemon_1_move_4_pp_ups" value="0" required="" min="0" max="3"></div><div><label for="pokemon_1_ot_tid">OT TID</label> <input type="number" id="pokemon_1_ot_tid" name="pokemon_1_ot_tid" placeholder="00000" required="" min="0" max="65535"></div><div><label for="pokemon_1_ot_sid">OT SID</label> <input type="number" id="pokemon_1_ot_sid" name="pokemon_1_ot_sid" placeholder="65535" required="" min="0" max="65535"></div><div><label for="pokemon_1_ev_1">EVs</label> <input type="number" id="pokemon_1_ev_1" name="pokemon_1_ev_1" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_1_ev_2" name="pokemon_1_ev_2" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_1_ev_3" name="pokemon_1_ev_3" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_1_ev_4" name="pokemon_1_ev_4" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_1_ev_5" name="pokemon_1_ev_5" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_1_ev_6" name="pokemon_1_ev_6" value="0" required="" min="0" max="255"></div><div><label for="pokemon_1_iv_1">IVs</label> <input type="number" id="pokemon_1_iv_1" name="pokemon_1_iv_1" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_1_iv_2" name="pokemon_1_iv_2" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_1_iv_3" name="pokemon_1_iv_3" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_1_iv_4" name="pokemon_1_iv_4" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_1_iv_5" name="pokemon_1_iv_5" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_1_iv_6" name="pokemon_1_iv_6" value="0" required="" min="0" max="31"></div><div><label for="pokemon_1_pid">PID</label> <input type="text" id="pokemon_1_pid" name="pokemon_1_pid" placeholder="FFFFFFFF" required="" minlength="1" maxlength="11"> <label id="pokemon_1_notes"></label></div><div><label for="pokemon_1_friendship">Friendship</label> <input type="number" id="pokemon_1_friendship" name="pokemon_1_friendship" value="0" required="" min="0" max="255"></div><h3>Pokemon 2 Info</h3><div><label for="pokemon_2_species">Species</label><select id="pokemon_2_species" name="pokemon_2_species" required=""></select></div><div><label for="pokemon_2_nickname">Nickname</label> <input type="text" id="pokemon_2_nickname" name="pokemon_2_nickname" minlength="1" maxlength="10"></div><div><label for="pokemon_2_level">Level</label> <input type="number" id="pokemon_2_level" name="pokemon_2_level" value="1" required="" min="1" max="100"></div><div><label for="pokemon_2_held_item">Held Item</label><select id="pokemon_2_held_item" name="pokemon_2_held_item" required=""></select></div><div><label for="pokemon_2_ability">Ability</label><select id="pokemon_2_ability" name="pokemon_2_ability" required=""></select></div><div><label for="pokemon_2_move_1">Moves</label><select id="pokemon_2_move_1" name="pokemon_2_move_1" required=""></select><select id="pokemon_2_move_2" name="pokemon_2_move_2" required=""></select><select id="pokemon_2_move_3" name="pokemon_2_move_3" required=""></select><select id="pokemon_2_move_4" name="pokemon_2_move_4" required=""></select></div><div><label for="pokemon_2_move_1_pp_ups">PP Ups</label> <input type="number" id="pokemon_2_move_1_pp_ups" name="pokemon_2_move_1_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_2_move_2_pp_ups" name="pokemon_2_move_2_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_2_move_3_pp_ups" name="pokemon_2_move_3_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_2_move_4_pp_ups" name="pokemon_2_move_4_pp_ups" value="0" required="" min="0" max="3"></div><div><label for="pokemon_2_ot_tid">OT TID</label> <input type="number" id="pokemon_2_ot_tid" name="pokemon_2_ot_tid" placeholder="00000" required="" min="0" max="65535"></div><div><label for="pokemon_2_ot_sid">OT SID</label> <input type="number" id="pokemon_2_ot_sid" name="pokemon_2_ot_sid" placeholder="65535" required="" min="0" max="65535"></div><div><label for="pokemon_2_ev_1">EVs</label> <input type="number" id="pokemon_2_ev_1" name="pokemon_2_ev_1" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_2_ev_2" name="pokemon_2_ev_2" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_2_ev_3" name="pokemon_2_ev_3" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_2_ev_4" name="pokemon_2_ev_4" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_2_ev_5" name="pokemon_2_ev_5" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_2_ev_6" name="pokemon_2_ev_6" value="0" required="" min="0" max="255"></div><div><label for="pokemon_2_iv_1">IVs</label> <input type="number" id="pokemon_2_iv_1" name="pokemon_2_iv_1" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_2_iv_2" name="pokemon_2_iv_2" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_2_iv_3" name="pokemon_2_iv_3" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_2_iv_4" name="pokemon_2_iv_4" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_2_iv_5" name="pokemon_2_iv_5" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_2_iv_6" name="pokemon_2_iv_6" value="0" required="" min="0" max="31"></div><div><label for="pokemon_2_pid">PID</label> <input type="text" id="pokemon_2_pid" name="pokemon_2_pid" placeholder="FFFFFFFF" required="" minlength="1" maxlength="11"> <label id="pokemon_2_notes"></label></div><div><label for="pokemon_2_friendship">Friendship</label> <input type="number" id="pokemon_2_friendship" name="pokemon_2_friendship" value="0" required="" min="0" max="255"></div><h3>Pokemon 3 Info</h3><div><label for="pokemon_3_species">Species</label><select id="pokemon_3_species" name="pokemon_3_species" required=""></select></div><div><label for="pokemon_3_nickname">Nickname</label> <input type="text" id="pokemon_3_nickname" name="pokemon_3_nickname" minlength="1" maxlength="10"></div><div><label for="pokemon_3_level">Level</label> <input type="number" id="pokemon_3_level" name="pokemon_3_level" value="1" required="" min="1" max="100"></div><div><label for="pokemon_3_held_item">Held Item</label><select id="pokemon_3_held_item" name="pokemon_3_held_item" required=""></select></div><div><label for="pokemon_3_ability">Ability</label><select id="pokemon_3_ability" name="pokemon_3_ability" required=""></select></div><div><label for="pokemon_3_move_1">Moves</label><select id="pokemon_3_move_1" name="pokemon_3_move_1" required=""></select><select id="pokemon_3_move_2" name="pokemon_3_move_2" required=""></select><select id="pokemon_3_move_3" name="pokemon_3_move_3" required=""></select><select id="pokemon_3_move_4" name="pokemon_3_move_4" required=""></select></div><div><label for="pokemon_3_move_1_pp_ups">PP Ups</label> <input type="number" id="pokemon_3_move_1_pp_ups" name="pokemon_3_move_1_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_3_move_2_pp_ups" name="pokemon_3_move_2_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_3_move_3_pp_ups" name="pokemon_3_move_3_pp_ups" value="0" required="" min="0" max="3"> <input type="number" id="pokemon_3_move_4_pp_ups" name="pokemon_3_move_4_pp_ups" value="0" required="" min="0" max="3"></div><div><label for="pokemon_3_ot_tid">OT TID</label> <input type="number" id="pokemon_3_ot_tid" name="pokemon_3_ot_tid" placeholder="00000" required="" min="0" max="65535"></div><div><label for="pokemon_3_ot_sid">OT SID</label> <input type="number" id="pokemon_3_ot_sid" name="pokemon_3_ot_sid" placeholder="65535" required="" min="0" max="65535"></div><div><label for="pokemon_3_ev_1">EVs</label> <input type="number" id="pokemon_3_ev_1" name="pokemon_3_ev_1" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_3_ev_2" name="pokemon_3_ev_2" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_3_ev_3" name="pokemon_3_ev_3" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_3_ev_4" name="pokemon_3_ev_4" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_3_ev_5" name="pokemon_3_ev_5" value="0" required="" min="0" max="255"> <input type="number" id="pokemon_3_ev_6" name="pokemon_3_ev_6" value="0" required="" min="0" max="255"></div><div><label for="pokemon_3_iv_1">IVs</label> <input type="number" id="pokemon_3_iv_1" name="pokemon_3_iv_1" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_3_iv_2" name="pokemon_3_iv_2" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_3_iv_3" name="pokemon_3_iv_3" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_3_iv_4" name="pokemon_3_iv_4" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_3_iv_5" name="pokemon_3_iv_5" value="0" required="" min="0" max="31"> <input type="number" id="pokemon_3_iv_6" name="pokemon_3_iv_6" value="0" required="" min="0" max="31"></div><div><label for="pokemon_3_pid">PID</label> <input type="text" id="pokemon_3_pid" name="pokemon_3_pid" placeholder="FFFFFFFF" required="" minlength="1" maxlength="11"> <label id="pokemon_3_notes"></label></div><div><label for="pokemon_3_friendship">Friendship</label> <input type="number" id="pokemon_3_friendship" name="pokemon_3_friendship" value="0" required="" min="0" max="255"></div><button type="submit">Generate</button></form><p><script type="text/javascript">var TRAINER_CLASSES = [
+		'AQUA_LEADER', 'TEAM_AQUA_M', 'TEAM_AQUA_F', 'AROMA_LADY', 'RUIN_MANIAC',
+		'INTERVIEWER', 'TUBER_F', 'TUBER_M', 'COOLTRAINER_M', 'COOLTRAINER_F',
+		'HEX_MANIAC', 'LADY', 'BEAUTY', 'RICH_BOY', 'POKEMANIAC',
+		'SWIMMER_M', 'TC_BLACK_BELT', 'GUITARIST', 'KINDLER', 'CAMPER',
+		'BUG_MANIAC', 'PSYCHIC_M', 'PSYCHIC_F', 'GENTLEMAN', 'ELITE_FOUR_SIDNEY',
+		'ELITE_FOUR_PHOEBE', 'LEADER_ROXANNE', 'LEADER_BRAWLY', 'LEADER_TATE_LIZA', 'SCHOOL_KID_M',
+		'SCHOOL_KID_F', 'SR_AND_JR', 'POKEFAN_M', 'POKEFAN_F', 'EXPERT_M',
+		'EXPERT_F', 'YOUNGSTER', 'CHAMPION', 'FISHERMAN', 'TRIATHLETE_M_BIKE',
+		'TRIATHLETE_F_BIKE', 'TRIATHLETE_M_RUN', 'TRIATHLETE_F_RUN', 'TRIATHLETE_M_SWIM', 'TRIATHLETE_F_SWIM',
+		'DRAGON_TAMER', 'BIRD_KEEPER', 'NINJA_BOY', 'BATTLE_GIRL', 'PARASOL_LADY',
+		'SWIMMER_F', 'PICNICKER', 'TWINS', 'SAILOR', 'BOARDER_1',
+		'BOARDER_2', 'COLLECTOR', 'PKMN_TRAINER_WALLY', 'PKMN_TRAINER_BRENDAN_1', 'PKMN_TRAINER_BRENDAN_2',
+		'PKMN_TRAINER_BRENDAN_3', 'PKMN_TRAINER_MAY_1', 'PKMN_TRAINER_MAY_2', 'PKMN_TRAINER_MAY_3', 'PKMN_BREEDER_M',
+		'PKMN_BREEDER_F', 'PKMN_RANGER_M', 'PKMN_RANGER_F', 'MAGMA_LEADER', 'TEAM_MAGMA_M',
+		'TEAM_MAGMA_F', 'LASS', 'BUG_CATCHER', 'HIKER', 'YOUNG_COUPLE',
+		'OLD_COUPLE', 'SIS_AND_BRO',
+	];
+	TRAINER_CLASSES.sort();
+
+	var SPECIES = [
+		'BULBASAUR', 'IVYSAUR', 'VENUSAUR', 'CHARMANDER', 'CHARMELEON',
+		'CHARIZARD', 'SQUIRTLE', 'WARTORTLE', 'BLASTOISE', 'CATERPIE',
+		'METAPOD', 'BUTTERFREE', 'WEEDLE', 'KAKUNA', 'BEEDRILL',
+		'PIDGEY', 'PIDGEOTTO', 'PIDGEOT', 'RATTATA', 'RATICATE',
+		'SPEAROW', 'FEAROW', 'EKANS', 'ARBOK', 'PIKACHU',
+		'RAICHU', 'SANDSHREW', 'SANDSLASH', 'NIDORAN_F', 'NIDORINA',
+		'NIDOQUEEN', 'NIDORAN_M', 'NIDORINO', 'NIDOKING', 'CLEFAIRY',
+		'CLEFABLE', 'VULPIX', 'NINETALES', 'JIGGLYPUFF', 'WIGGLYTUFF',
+		'ZUBAT', 'GOLBAT', 'ODDISH', 'GLOOM', 'VILEPLUME',
+		'PARAS', 'PARASECT', 'VENONAT', 'VENOMOTH', 'DIGLETT',
+		'DUGTRIO', 'MEOWTH', 'PERSIAN', 'PSYDUCK', 'GOLDUCK',
+		'MANKEY', 'PRIMEAPE', 'GROWLITHE', 'ARCANINE', 'POLIWAG',
+		'POLIWHIRL', 'POLIWRATH', 'ABRA', 'KADABRA', 'ALAKAZAM',
+		'MACHOP', 'MACHOKE', 'MACHAMP', 'BELLSPROUT', 'WEEPINBELL',
+		'VICTREEBEL', 'TENTACOOL', 'TENTACRUEL', 'GEODUDE', 'GRAVELER',
+		'GOLEM', 'PONYTA', 'RAPIDASH', 'SLOWPOKE', 'SLOWBRO',
+		'MAGNEMITE', 'MAGNETON', 'FARFETCH_D', 'DODUO', 'DODRIO',
+		'SEEL', 'DEWGONG', 'GRIMER', 'MUK', 'SHELLDER',
+		'CLOYSTER', 'GASTLY', 'HAUNTER', 'GENGAR', 'ONIX',
+		'DROWZEE', 'HYPNO', 'KRABBY', 'KINGLER', 'VOLTORB',
+		'ELECTRODE', 'EXEGGCUTE', 'EXEGGUTOR', 'CUBONE', 'MAROWAK',
+		'HITMONLEE', 'HITMONCHAN', 'LICKITUNG', 'KOFFING', 'WEEZING',
+		'RHYHORN', 'RHYDON', 'CHANSEY', 'TANGELA', 'KANGASKHAN',
+		'HORSEA', 'SEADRA', 'GOLDEEN', 'SEAKING', 'STARYU',
+		'STARMIE', 'MR_MIME', 'SCYTHER', 'JYNX', 'ELECTABUZZ',
+		'MAGMAR', 'PINSIR', 'TAUROS', 'MAGIKARP', 'GYARADOS',
+		'LAPRAS', 'DITTO', 'EEVEE', 'VAPOREON', 'JOLTEON',
+		'FLAREON', 'PORYGON', 'OMANYTE', 'OMASTAR', 'KABUTO',
+		'KABUTOPS', 'AERODACTYL', 'SNORLAX', 'ARTICUNO', 'ZAPDOS',
+		'MOLTRES', 'DRATINI', 'DRAGONAIR', 'DRAGONITE', 'MEWTWO',
+		'MEW', 'CHIKORITA', 'BAYLEEF', 'MEGANIUM',
+		'CYNDAQUIL', 'QUILAVA', 'TYPHLOSION', 'TOTODILE', 'CROCONAW',
+		'FERALIGATR', 'SENTRET', 'FURRET', 'HOOTHOOT', 'NOCTOWL',
+		'LEDYBA', 'LEDIAN', 'SPINARAK', 'ARIADOS', 'CROBAT',
+		'CHINCHOU', 'LANTURN', 'PICHU', 'CLEFFA', 'IGGLYBUFF',
+		'TOGEPI', 'TOGETIC', 'NATU', 'XATU', 'MAREEP',
+		'FLAAFFY', 'AMPHAROS', 'BELLOSSOM', 'MARILL', 'AZUMARILL',
+		'SUDOWOODO', 'POLITOED', 'HOPPIP', 'SKIPLOOM', 'JUMPLUFF',
+		'AIPOM', 'SUNKERN', 'SUNFLORA', 'YANMA', 'WOOPER',
+		'QUAGSIRE', 'ESPEON', 'UMBREON', 'MURKROW', 'SLOWKING',
+		'MISDREAVUS', 'UNOWN', 'WOBBUFFET', 'GIRAFARIG', 'PINECO',
+		'FORRETRESS', 'DUNSPARCE', 'GLIGAR', 'STEELIX', 'SNUBBULL',
+		'GRANBULL', 'QWILFISH', 'SCIZOR', 'SHUCKLE', 'HERACROSS',
+		'SNEASEL', 'TEDDIURSA', 'URSARING', 'SLUGMA', 'MAGCARGO',
+		'SWINUB', 'PILOSWINE', 'CORSOLA', 'REMORAID', 'OCTILLERY',
+		'DELIBIRD', 'MANTINE', 'SKARMORY', 'HOUNDOUR', 'HOUNDOOM',
+		'KINGDRA', 'PHANPY', 'DONPHAN', 'PORYGON2', 'STANTLER',
+		'SMEARGLE', 'TYROGUE', 'HITMONTOP', 'SMOOCHUM', 'ELEKID',
+		'MAGBY', 'MILTANK', 'BLISSEY', 'RAIKOU', 'ENTEI',
+		'SUICUNE', 'LARVITAR', 'PUPITAR', 'TYRANITAR', 'LUGIA',
+		'HO_OH', 'CELEBI', 'TREECKO', 'GROVYLE',
+		'SCEPTILE', 'TORCHIC', 'COMBUSKEN', 'BLAZIKEN', 'MUDKIP',
+		'MARSHTOMP', 'SWAMPERT', 'POOCHYENA', 'MIGHTYENA', 'ZIGZAGOON',
+		'LINOONE', 'WURMPLE', 'SILCOON', 'BEAUTIFLY', 'CASCOON',
+		'DUSTOX', 'LOTAD', 'LOMBRE', 'LUDICOLO', 'SEEDOT',
+		'NUZLEAF', 'SHIFTRY', 'NINCADA', 'NINJASK', 'SHEDINJA',
+		'TAILLOW', 'SWELLOW', 'SHROOMISH', 'BRELOOM', 'SPINDA',
+		'WINGULL', 'PELIPPER', 'SURSKIT', 'MASQUERAIN', 'WAILMER',
+		'WAILORD', 'SKITTY', 'DELCATTY', 'KECLEON', 'BALTOY',
+		'CLAYDOL', 'NOSEPASS', 'TORKOAL', 'SABLEYE', 'BARBOACH',
+		'WHISCASH', 'LUVDISC', 'CORPHISH', 'CRAWDAUNT', 'FEEBAS',
+		'MILOTIC', 'CARVANHA', 'SHARPEDO', 'TRAPINCH', 'VIBRAVA',
+		'FLYGON', 'MAKUHITA', 'HARIYAMA', 'ELECTRIKE', 'MANECTRIC',
+		'NUMEL', 'CAMERUPT', 'SPHEAL', 'SEALEO', 'WALREIN',
+		'CACNEA', 'CACTURNE', 'SNORUNT', 'GLALIE', 'LUNATONE',
+		'SOLROCK', 'AZURILL', 'SPOINK', 'GRUMPIG', 'PLUSLE',
+		'MINUN', 'MAWILE', 'MEDITITE', 'MEDICHAM', 'SWABLU',
+		'ALTARIA', 'WYNAUT', 'DUSKULL', 'DUSCLOPS', 'ROSELIA',
+		'SLAKOTH', 'VIGOROTH', 'SLAKING', 'GULPIN', 'SWALOT',
+		'TROPIUS', 'WHISMUR', 'LOUDRED', 'EXPLOUD', 'CLAMPERL',
+		'HUNTAIL', 'GOREBYSS', 'ABSOL', 'SHUPPET', 'BANETTE',
+		'SEVIPER', 'ZANGOOSE', 'RELICANTH', 'ARON', 'LAIRON',
+		'AGGRON', 'CASTFORM', 'VOLBEAT', 'ILLUMISE', 'LILEEP',
+		'CRADILY', 'ANORITH', 'ARMALDO', 'RALTS', 'KIRLIA',
+		'GARDEVOIR', 'BAGON', 'SHELGON', 'SALAMENCE', 'BELDUM',
+		'METANG', 'METAGROSS', 'REGIROCK', 'REGICE', 'REGISTEEL',
+		'KYOGRE', 'GROUDON', 'RAYQUAZA', 'LATIAS', 'LATIOS',
+		'JIRACHI', 'DEOXYS', 'CHIMECHO',
+	];
+	SPECIES.sort();
+
+	var EZ_CHAT = [
+		'_PIKACHU', '_RAICHU', '_SANDSHREW', '_SANDSLASH', '_VULPIX',
+		'_NINETALES', '_JIGGLYPUFF', '_WIGGLYTUFF', '_ZUBAT', '_GOLBAT',
+		'_ODDISH', '_GLOOM', '_VILEPLUME', '_PSYDUCK', '_GOLDUCK',
+		'_ABRA', '_KADABRA', '_ALAKAZAM', '_MACHOP', '_MACHOKE',
+		'_MACHAMP', '_TENTACOOL', '_TENTACRUEL', '_GEODUDE', '_GRAVELER',
+		'_GOLEM', '_MAGNEMITE', '_MAGNETON', '_DODUO', '_DODRIO',
+		'_GRIMER', '_MUK', '_VOLTORB', '_ELECTRODE', '_KOFFING',
+		'_WEEZING', '_RHYHORN', '_RHYDON', '_HORSEA', '_SEADRA',
+		'_GOLDEEN', '_SEAKING', '_STARYU', '_STARMIE', '_PINSIR',
+		'_MAGIKARP', '_GYARADOS', '_CROBAT', '_CHINCHOU', '_LANTURN',
+		'_PICHU', '_IGGLYBUFF', '_NATU', '_XATU', '_BELLOSSOM',
+		'_MARILL', '_AZUMARILL', '_WOBBUFFET', '_GIRAFARIG', '_HERACROSS',
+		'_SLUGMA', '_MAGCARGO', '_CORSOLA', '_SKARMORY', '_KINGDRA',
+		'_PHANPY', '_DONPHAN', '_TREECKO', '_GROVYLE', '_SCEPTILE',
+		'_TORCHIC', '_COMBUSKEN', '_BLAZIKEN', '_MUDKIP', '_MARSHTOMP',
+		'_SWAMPERT', '_POOCHYENA', '_MIGHTYENA', '_ZIGZAGOON', '_LINOONE',
+		'_WURMPLE', '_SILCOON', '_BEAUTIFLY', '_CASCOON', '_DUSTOX',
+		'_LOTAD', '_LOMBRE', '_LUDICOLO', '_SEEDOT', '_NUZLEAF',
+		'_SHIFTRY', '_NINCADA', '_NINJASK', '_SHEDINJA', '_TAILLOW',
+		'_SWELLOW', '_SHROOMISH', '_BRELOOM', '_SPINDA', '_WINGULL',
+		'_PELIPPER', '_SURSKIT', '_MASQUERAIN', '_WAILMER', '_WAILORD',
+		'_SKITTY', '_DELCATTY', '_KECLEON', '_BALTOY', '_CLAYDOL',
+		'_NOSEPASS', '_TORKOAL', '_SABLEYE', '_BARBOACH', '_WHISCASH',
+		'_LUVDISC', '_CORPHISH', '_CRAWDAUNT', '_FEEBAS', '_MILOTIC',
+		'_CARVANHA', '_SHARPEDO', '_TRAPINCH', '_VIBRAVA', '_FLYGON',
+		'_MAKUHITA', '_HARIYAMA', '_ELECTRIKE', '_MANECTRIC', '_NUMEL',
+		'_CAMERUPT', '_SPHEAL', '_SEALEO', '_WALREIN', '_CACNEA',
+		'_CACTURNE', '_SNORUNT', '_GLALIE', '_LUNATONE', '_SOLROCK',
+		'_AZURILL', '_SPOINK', '_GRUMPIG', '_PLUSLE', '_MINUN',
+		'_MAWILE', '_MEDITITE', '_MEDICHAM', '_SWABLU', '_ALTARIA',
+		'_WYNAUT', '_DUSKULL', '_DUSCLOPS', '_ROSELIA', '_SLAKOTH',
+		'_VIGOROTH', '_SLAKING', '_GULPIN', '_SWALOT', '_TROPIUS',
+		'_WHISMUR', '_LOUDRED', '_EXPLOUD', '_CLAMPERL', '_HUNTAIL',
+		'_GOREBYSS', '_ABSOL', '_SHUPPET', '_BANETTE', '_SEVIPER',
+		'_ZANGOOSE', '_RELICANTH', '_ARON', '_LAIRON', '_AGGRON',
+		'_CASTFORM', '_VOLBEAT', '_ILLUMISE', '_LILEEP', '_CRADILY',
+		'_ANORITH', '_ARMALDO', '_RALTS', '_KIRLIA', '_GARDEVOIR',
+		'_BAGON', '_SHELGON', '_SALAMENCE', '_BELDUM', '_METANG',
+		'_METAGROSS', '_REGIROCK', '_REGICE', '_REGISTEEL', '_KYOGRE',
+		'_GROUDON', '_RAYQUAZA', '_LATIAS', '_LATIOS', '_JIRACHI',
+		'_DEOXYS', '_CHIMECHO', 'I_CHOOSE_YOU', 'GOTCHA', 'TRADE',
+		'_SAPPHIRE', 'EVOLVE', 'ENCYCLOPEDIA', 'NATURE', 'CENTER',
+		'EGG', 'LINK', 'SP_ABILITY', 'TRAINER', 'VERSION',
+		'POKENAV', 'POKEMON', 'GET', 'POKEDEX', '_RUBY',
+		'LEVEL', 'DARK', 'STENCH', 'THICK_FAT', 'RAIN_DISH',
+		'DRIZZLE', 'ARENA_TRAP', 'INTIMIDATE', 'ROCK_HEAD', 'COLOR',
+		'ALT_COLOR', 'ROCK', 'BEAUTIFUL', '_BEAUTY', 'AIR_LOCK',
+		'_T_PSYCHIC', 'HYPER_CUTTER', 'FIGHTING', 'SHADOW_TAG', 'SMART',
+		'SMARTNESS', 'SPEED_BOOST', 'COOL', 'COOLNESS', 'BATTLE_ARMOR',
+		'CUTE', 'CUTENESS', 'STURDY', 'SUCTION_CUPS', 'GRASS',
+		'CLEAR_BODY', 'TORRENT', 'GHOST', 'ICE', 'GUTS',
+		'ROUGH_SKIN', 'SHELL_ARMOR', 'NATURAL_CURE', 'DAMP', 'GROUND',
+		'LIMBER', 'MAGNET_PULL', 'WHITE_SMOKE', 'SYNCHRONIZE', 'OVERGROW',
+		'SWIFT_SWIM', 'SAND_STREAM', 'SAND_VEIL', 'KEEN_EYE', 'INNER_FOCUS',
+		'STATIC', 'TYPE', 'TOUGH', 'TOUGHNESS', 'SHED_SKIN',
+		'HUGE_POWER', 'VOLT_ABSORB', 'WATER_ABSORB', 'ELECTRIC', 'FORECAST',
+		'SERENE_GRACE', 'POISON', 'POISON_POINT', 'DRAGON', 'TRACE',
+		'OBLIVIOUS', 'TRUANT', 'RUN_AWAY', 'STICKY_HOLD', 'CLOUD_NINE',
+		'NORMAL', 'STEEL', 'ILLUMINATE', 'EARLY_BIRD', 'HUSTLE',
+		'SHINE', 'FLYING', 'DROUGHT', 'LIGHTNINGROD', 'COMPOUNDEYES',
+		'MARVEL_SCALE', 'WONDER_GUARD', 'INSOMNIA', 'LEVITATE', 'PLUS',
+		'PRESSURE', 'LIQUID_OOZE', 'COLOR_CHANGE', 'SOUNDPROOF', 'EFFECT_SPORE',
+		'PkRS', 'FIRE', 'FLAME_BODY', 'MINUS', 'OWN_TEMPO',
+		'MAGMA_ARMOR', 'WATER', 'WATER_VEIL', 'BUG', 'SWARM',
+		'CUTE_CHARM', 'IMMUNITY', 'BLAZE', 'PICKUP', 'PATTERN',
+		'FLASH_FIRE', 'VITAL_SPIRIT', 'CHLOROPHYLL', 'PURE_POWER', 'SHIELD_DUST',
+		'MATCH_UP', 'GO', 'NO_1', 'DECIDE', 'LET_ME_WIN',
+		'WINS', 'WIN', 'WON', 'IF_I_WIN', 'WHEN_I_WIN',
+		'CAN_T_WIN', 'CAN_WIN', 'NO_MATCH', 'SPIRIT', 'DECIDED',
+		'TRUMP_CARD', 'TAKE_THAT', 'COME_ON', 'ATTACK', 'SURRENDER',
+		'GUTSY', 'TALENT', 'STRATEGY', 'SMITE', 'MATCH',
+		'VICTORY', 'OFFENSIVE', 'SENSE', 'VERSUS', 'FIGHTS',
+		'POWER', 'CHALLENGE', 'STRONG', 'TOO_STRONG', 'GO_EASY',
+		'FOE', 'GENIUS', 'LEGEND', 'ESCAPE', 'AIM',
+		'BATTLE', 'FIGHT', 'RESUSCITATE', 'POINTS', 'SERIOUS',
+		'GIVE_UP', 'LOSS', 'IF_I_LOSE', 'LOST', 'LOSE',
+		'GUARD', 'PARTNER', 'REJECT', 'ACCEPT', 'INVINCIBLE',
+		'RECEIVED', 'EASY', 'WEAK', 'TOO_WEAK', 'PUSHOVER',
+		'_LEADER', 'RULE', 'MOVE', 'THANKS', 'YES',
+		'HERE_GOES', 'HERE_I_COME', 'HERE_IT_IS', 'YEAH', 'WELCOME',
+		'OI', 'HOW_DO', 'CONGRATS', 'GIVE_ME', 'SORRY',
+		'APOLOGIZE', 'FORGIVE', 'HEY_THERE', 'HELLO', 'GOOD_BYE',
+		'THANK_YOU', 'I_VE_ARRIVED', 'PARDON', 'EXCUSE', 'SEE_YA',
+		'EXCUSE_ME', 'WELL_THEN', 'GO_AHEAD', 'APPRECIATE', 'HEY_',
+		'WHAT_S_UP_', 'HUH_', 'NO', 'HI', 'YEAH_YEAH',
+		'BYE_BYE', 'MEET_YOU', 'HEY', 'SMELL', 'LISTENING',
+		'HOO_HAH', 'YAHOO', 'YO', 'COME_OVER', 'COUNT_ON',
+		'OPPONENT', 'I', 'YOU', 'YOURS', 'SON',
+		'YOUR', 'YOU_RE', 'YOU_VE', 'MOTHER', 'GRANDFATHER',
+		'UNCLE', 'FATHER', 'BOY', 'ADULT', 'BROTHER',
+		'SISTER', 'GRANDMOTHER', 'AUNT', 'PARENT', 'MAN',
+		'ME', 'GIRL', 'BABE', 'FAMILY', 'HER',
+		'HIM', 'HE', 'PLACE', 'DAUGHTER', 'HIS',
+		'HE_S', 'AREN_T', 'SIBLINGS', 'KID', 'CHILDREN',
+		'MR_', 'MRS_', 'MYSELF', 'I_WAS', 'TO_ME',
+		'MY', 'I_AM', 'I_VE', 'WHO', 'SOMEONE',
+		'WHO_WAS', 'TO_WHOM', 'WHOSE', 'WHO_IS', 'IT_S',
+		'_LADY', 'FRIEND', 'ALLY', 'PERSON', 'DUDE',
+		'THEY', 'THEY_WERE', 'TO_THEM', 'THEIR', 'THEY_RE',
+		'THEY_VE', 'WE', 'BEEN', 'TO_US', 'OUR',
+		'WE_RE', 'RIVAL', 'WE_VE', 'WOMAN', 'SHE',
+		'SHE_WAS', 'TO_HER', 'HER_S', 'SHE_IS', 'SOME',
+		'_EX', '_EX_EX', '_QU_EX', '_QU', '_ELIP',
+		'_ELIP_EX', '_ELIP3', '_HYPHEN', '_HYPHEN3', 'UH_OH',
+		'WAAAH', 'AHAHA', 'OH_', 'NOPE', 'URGH',
+		'HMM', 'WHOAH', 'WROOOAAR_', 'WOW', 'GIGGLE',
+		'SIGH', 'UNBELIEVABLE', 'CRIES', 'AGREE', 'EH_',
+		'CRY', 'EHEHE', 'OI_OI_OI', 'OH_YEAH', 'OH',
+		'OOPS', 'SHOCKED', 'EEK', 'GRAAAH', 'GWAHAHAHA',
+		'WAY', 'TCH', 'HEHE', 'HAH', 'YUP',
+		'HAHAHA', 'AIYEEH', 'HIYAH', 'FUFUFU', 'LOL',
+		'SNORT', 'HUMPH', 'HEHEHE', 'HEH', 'HOHOHO',
+		'UH_HUH', 'OH_DEAR', 'ARRGH', 'MUFUFU', 'MMM',
+		'OH_KAY', 'OKAY', 'LALALA', 'YAY', 'AWW',
+		'WOWEE', 'GWAH', 'WAHAHAHA', 'LISTEN', 'NOT_VERY',
+		'MEAN', 'LIE', 'LAY', 'RECOMMEND', 'NITWIT',
+		'QUITE', 'FROM', 'FEELING', 'BUT', 'HOWEVER',
+		'CASE', 'THE', 'MISS', 'HOW', 'HIT',
+		'ENOUGH', 'A_LOT', 'A_LITTLE', 'ABSOLUTELY', '_AND',
+		'ONLY', 'AROUND', 'PROBABLY', '_IF', 'VERY',
+		'A_TINY_BIT', 'WILD', 'THAT_S', 'JUST', 'EVEN_SO_',
+		'MUST_BE', 'NATURALLY', 'FOR_NOW_', 'UNDERSTOOD', 'JOKING',
+		'READY', 'SOMETHING', 'SOMEHOW', 'ALTHOUGH', 'ALSO',
+		'PERFECT', 'AS_MUCH_AS', 'REALLY', 'TRULY', 'SERIOUSLY',
+		'TOTALLY', 'UNTIL', 'AS_IF', 'MOOD', 'RATHER',
+		'AWFULLY', 'MODE', 'MORE', 'TOO_LATE', 'FINALLY',
+		'ANY', 'INSTEAD', 'FANTASTIC', 'WILL', 'WILL_BE_HERE',
+		'_OR', 'TIMES', 'WONDER', 'IS_IT_', 'BE',
+		'GIMME', 'COULD', 'LIKELY_TO', 'WOULD', 'IS',
+		'ISN_T_IT_', 'LET_S', 'OTHER', 'ARE', 'WAS',
+		'WERE', 'THOSE', 'ISN_T', 'WON_T', 'CAN_T',
+		'CAN', 'DON_T', 'DO', 'DOES', 'WHOM',
+		'WHICH', 'WASN_T', 'WEREN_T', 'HAVE', 'HAVEN_T',
+		'_A', 'AN', 'NOT', 'THERE', 'OK_',
+		'SO', 'MAYBE', 'ABOUT', 'OVER', 'IT',
+		'ALL', '_FOR', 'ON', 'OFF', 'AS',
+		'TO', 'WITH', 'BETTER', 'EVER', 'SINCE',
+		'OF', 'BELONGS_TO', 'AT', 'IN', 'OUT',
+		'TOO', 'LIKE', 'DID', 'DIDN_T', 'DOESN_T',
+		'WITHOUT', 'AFTER', 'BEFORE', 'WHILE', 'THAN',
+		'ONCE', 'ANYWHERE', 'MEET', 'PLAY', 'HURRIED',
+		'GOES', 'GIDDY', 'HAPPY', 'HAPPINESS', 'EXCITE',
+		'IMPORTANT', 'FUNNY', 'GOT', 'GO_HOME', 'DISAPPOINTED',
+		'DISAPPOINTS', 'SAD', 'TRY', 'TRIES', 'HEARS',
+		'THINK', 'HEAR', 'WANTS', 'MISHEARD', 'DISLIKE',
+		'ANGRY', 'ANGER', 'SCARY', 'LONESOME', 'DISAPPOINT',
+		'JOY', 'GETS', 'NEVER', 'DARN', 'DOWNCAST',
+		'INCREDIBLE', 'LIKES', 'DISLIKES', 'BORING', 'CARE',
+		'CARES', 'ALL_RIGHT', 'ADORE', 'DISASTER', 'ENJOY',
+		'ENJOYS', 'EAT', 'LACKING', 'BAD', 'HARD',
+		'TERRIBLE', 'SHOULD', 'NICE', 'DRINK', 'SURPRISE',
+		'FEAR', 'WANT', 'WAIT', 'SATISFIED', 'SEE',
+		'RARE', 'NEGATIVE', 'DONE', 'DANGER', 'DEFEATED',
+		'BEAT', 'GREAT', 'ROMANTIC', 'QUESTION', 'UNDERSTAND',
+		'UNDERSTANDS', 'HOT', 'EXISTS', 'EXCESS', 'APPROVED',
+		'HAS', 'GOOD', 'LESS', 'MOMENTUM', 'GOING',
+		'WEIRD', 'BUSY', 'TOGETHER', 'FULL', 'ABSENT',
+		'BEING', 'NEED', 'TASTY', 'SKILLED', 'NOISY',
+		'BIG', 'LATE', 'CLOSE', 'DOCILE', 'AMUSING',
+		'ENTERTAINING', 'PERFECTION', 'PRETTY', 'HEALTHY', 'EXCELLENT',
+		'UPSIDE_DOWN', 'COLD', 'REFRESHING', 'UNAVOIDABLE', 'MUCH',
+		'OVERWHELMING', 'FABULOUS', '_ELSE', 'EXPENSIVE', 'CORRECT',
+		'IMPOSSIBLE', 'SMALL', 'DIFFERENT', 'TIRED', 'SKILL',
+		'TOP', 'NON_STOP', 'PREPOSTEROUS', 'NONE', 'NOTHING',
+		'NATURAL', 'BECOMES', 'LUKEWARM', 'FAST', '_LOW',
+		'AWFUL', 'ALONE', 'BORED', 'SECRET', 'MYSTERY',
+		'LACKS', 'BEST', 'LOUSY', 'MISTAKE', 'KIND',
+		'WELL', 'WEAKENED', 'SIMPLE', 'SEEMS', 'BADLY',
+		'MEETS', 'CONCEDE', 'GIVE', 'GIVES', 'PLAYED',
+		'PLAYS', 'COLLECT', 'WALKING', 'WALKS', 'SAYS',
+		'WENT', 'SAID', 'WAKE_UP', 'WAKES_UP', 'ANGERS',
+		'TEACH', 'TEACHES', 'PLEASE', 'LEARN', 'CHANGE',
+		'STORY', 'TRUST', 'LAVISH', 'LISTENS', 'HEARING',
+		'TRAINS', 'CHOOSE', 'COME', 'CAME', 'SEARCH',
+		'MAKE', 'CAUSE', 'KNOW', 'KNOWS', 'REFUSE',
+		'STORES', 'BRAG', 'IGNORANT', 'THINKS', 'BELIEVE',
+		'SLIDE', 'EATS', 'USE', 'USES', 'USING',
+		'COULDN_T', 'CAPABLE', 'DISAPPEAR', 'APPEAR', 'THROW',
+		'WORRY', 'SLEPT', 'SLEEP', 'RELEASE', 'DRINKS',
+		'RUNS', 'RUN', 'WORKS', 'WORKING', 'TALKING',
+		'TALK', 'SINK', 'SMACK', 'PRETEND', 'PRAISE',
+		'OVERDO', 'SHOW', 'LOOKS', 'SEES', 'SEEK',
+		'OWN', 'TAKE', 'ALLOW', 'FORGET', 'FORGETS',
+		'APPEARS', 'FAINT', 'FAINTED', 'CHORES', '_HOME',
+		'MONEY', 'ALLOWANCE', 'BATH', 'CONVERSATION', 'SCHOOL',
+		'COMMEMORATE', 'HABIT', 'GROUP', 'WORD', 'STORE',
+		'SERVICE', 'WORK', 'SYSTEM', 'TRAIN', 'CLASS',
+		'LESSONS', 'INFORMATION', 'LIVING', 'TEACHER', 'TOURNAMENT',
+		'_LETTER', 'EVENT', 'DIGITAL', 'TEST', 'DEPT_STORE',
+		'TELEVISION', 'PHONE', 'ITEM', 'NAME', 'NEWS',
+		'POPULAR', 'PARTY', 'STUDY', 'MACHINE', 'MAIL',
+		'MESSAGE', 'PROMISE', 'DREAM', 'KINDERGARTEN', 'LIFE',
+		'RADIO', 'RENTAL', 'WORLD', 'IDOL', 'ANIME',
+		'SONG', 'MOVIE', 'SWEETS', 'CHAT', 'CHILD_S_PLAY',
+		'TOYS', 'MUSIC', 'CARDS', 'SHOPPING', 'CAMERA',
+		'VIEWING', 'SPECTATOR', 'GOURMET', 'GAME', 'RPG',
+		'COLLECTION', 'COMPLETE', 'MAGAZINE', 'WALK', 'BIKE',
+		'HOBBY', 'SPORTS', 'SOFTWARE', 'SONGS', 'DIET',
+		'TREASURE', 'TRAVEL', 'DANCE', 'CHANNEL', 'MAKING',
+		'FISHING', 'DATE', 'DESIGN', 'LOCOMOTIVE', 'PLUSH_DOLL',
+		'PC', 'FLOWERS', 'HERO', 'NAP', 'HEROINE',
+		'FASHION', 'ADVENTURE', 'BOARD', 'BALL', 'BOOK',
+		'FESTIVAL', 'COMICS', 'HOLIDAY', 'PLANS', 'TRENDY',
+		'VACATION', 'LOOK', 'FALL', 'MORNING', 'TOMORROW',
+		'LAST', 'DAY', 'SOMETIME', 'ALWAYS', 'CURRENT',
+		'FOREVER', 'DAYS', 'END', 'TUESDAY', 'YESTERDAY',
+		'TODAY', 'FRIDAY', 'MONDAY', 'LATER', 'EARLIER',
+		'ANOTHER', 'TIME', 'FINISH', 'WEDNESDAY', 'SOON',
+		'START', 'MONTH', '_STOP', 'NOW', 'FINAL',
+		'NEXT', 'AGE', 'SATURDAY', 'SUMMER', 'SUNDAY',
+		'BEGINNING', 'SPRING', 'DAYTIME', 'WINTER', 'DAILY',
+		'OLDEN', 'ALMOST', 'NEARLY', 'THURSDAY', 'NIGHTTIME',
+		'NIGHT', 'WEEK', 'HIGHS', 'LOWS', 'UM',
+		'REAR', 'THINGS', 'THING', 'BELOW', 'ABOVE',
+		'BACK', '_HIGH', 'HERE', 'INSIDE', 'OUTSIDE',
+		'BESIDE', 'THIS_IS_IT_', 'THIS', 'EVERY', 'THESE',
+		'THESE_WERE', 'DOWN', 'THAT', 'THOSE_ARE', 'THOSE_WERE',
+		'THAT_S_IT_', 'AM', 'THAT_WAS', 'FRONT', 'UP',
+		'CHOICE', 'FAR', 'AWAY', 'NEAR', 'WHERE',
+		'WHEN', 'WHAT', 'DEEP', 'SHALLOW', 'WHY',
+		'CONFUSED', 'OPPOSITE', 'LEFT', 'RIGHT', 'WANDERING',
+		'RICKETY', 'ROCK_SOLID', 'HUNGRY', 'TIGHT', 'TICKLISH',
+		'TWIRLING', 'SPIRALING', 'THIRSTY', 'LOLLING', 'SILKY',
+		'SADLY', 'HOPELESS', 'USELESS', 'DROOLING', 'EXCITING',
+		'THICK', 'SMOOTH', 'SLIMY', 'THIN', '_BREAK',
+		'VORACIOUS', 'SCATTER', 'AWESOME', 'WIMPY', 'WOBBLY',
+		'SHAKY', 'RIPPED', 'SHREDDED', 'INCREASING', 'YET',
+		'DESTROYED', 'FIERY', 'LOVEY_DOVEY', 'HAPPILY', 'ANTICIPATION',
+		'APPEAL', 'EVENTS', 'STAY_AT_HOME', 'BERRY', 'CONTEST',
+		'MC', 'JUDGE', 'SUPER', 'STAGE', 'HALL_OF_FAME',
+		'EVOLUTION', 'HYPER', 'BATTLE_TOWER', 'LEADERS', 'BATTLE_ROOM',
+		'HIDDEN', 'SECRET_BASE', 'BLEND', 'POKEBLOCK', 'MASTER',
+		'RANK', 'RIBBON', '_KARATE_CHOP', '_DOUBLESLAP', '_THUNDERPUNCH',
+		'_RAZOR_WIND', '_CUT', '_GUST', '_FLY', '_BIND',
+		'_SAND_ATTACK', '_HEADBUTT', '_THRASH', '_DOUBLE_EDGE', '_TAIL_WHIP',
+		'_BITE', '_SING', '_SONICBOOM', '_DISABLE', '_FLAMETHROWER',
+		'_MIST', '_PSYBEAM', '_AURORA_BEAM', '_SUBMISSION', '_LOW_KICK',
+		'_COUNTER', '_STRENGTH', '_ABSORB', '_GROWTH', '_SOLARBEAM',
+		'_STUN_SPORE', '_STRING_SHOT', '_THUNDERBOLT', '_THUNDER', '_ROCK_THROW',
+		'_EARTHQUAKE', '_FISSURE', '_DIG', '_PSYCHIC', '_HYPNOSIS',
+		'_AGILITY', '_RAGE', '_SCREECH', '_DOUBLE_TEAM', '_RECOVER',
+		'_HARDEN', '_SMOKESCREEN', '_CONFUSE_RAY', '_WITHDRAW', '_HAZE',
+		'_FOCUS_ENERGY', '_BIDE', '_MIRROR_MOVE', '_SELFDESTRUCT', '_LICK',
+		'_SMOG', '_CLAMP', '_SWIFT', '_CONSTRICT', '_KINESIS',
+		'_LEECH_LIFE', '_LOVELY_KISS', '_SKY_ATTACK', '_BUBBLE', '_SPORE',
+		'_PSYWAVE', '_CRABHAMMER', '_ROCK_SLIDE', '_SHARPEN', '_SUPER_FANG',
+		'_SLASH', '_SKETCH', '_SPIDER_WEB', '_MIND_READER', '_NIGHTMARE',
+		'_FLAME_WHEEL', '_SNORE', '_FLAIL', '_AEROBLAST', '_REVERSAL',
+		'_SPITE', '_POWDER_SNOW', '_SCARY_FACE', '_OCTAZOOKA', '_ICY_WIND',
+		'_OUTRAGE', '_SANDSTORM', '_GIGA_DRAIN', '_ENDURE', '_CHARM',
+		'_ROLLOUT', '_SWAGGER', '_SPARK', '_MEAN_LOOK', '_HEAL_BELL',
+		'_RETURN', '_SAFEGUARD', '_PAIN_SPLIT', '_SACRED_FIRE', '_ENCORE',
+		'_PURSUIT', '_RAPID_SPIN', '_SWEET_SCENT', '_IRON_TAIL', '_VITAL_THROW',
+		'_MORNING_SUN', '_SYNTHESIS', '_CROSS_CHOP', '_RAIN_DANCE', '_CRUNCH',
+		'_PSYCH_UP', '_EXTREMESPEED', '_ANCIENTPOWER', '_SHADOW_BALL', '_ROCK_SMASH',
+		'_WHIRLPOOL', '_UPROAR', '_HAIL', '_TORMENT', '_FLATTER',
+		'_WILL_O_WISP', '_MEMENTO', '_FACADE', '_FOCUS_PUNCH', '_SMELLINGSALT',
+		'_FOLLOW_ME', '_NATURE_POWER', '_CHARGE', '_BRICK_BREAK', '_YAWN',
+		'_ENDEAVOR', '_SKILL_SWAP', '_GRUDGE', '_ICE_BALL', '_METEOR_MASH',
+		'_ASTONISH', '_WEATHER_BALL', '_AROMATHERAPY', '_FAKE_TEARS', '_AIR_CUTTER',
+		'_OVERHEAT', '_ODOR_SLEUTH', '_ROCK_TOMB', '_SILVER_WIND', '_METAL_SOUND',
+		'_GRASSWHISTLE', '_TICKLE', '_COSMIC_POWER', '_WATER_SPOUT', '_SIGNAL_BEAM',
+		'_SHADOW_PUNCH', '_EXTRASENSORY', '_SKY_UPPERCUT', '_SAND_TOMB', '_SHEER_COLD',
+		'_POUND', '_COMET_PUNCH', '_MEGA_PUNCH', '_PAY_DAY', '_FIRE_PUNCH',
+		'_ICE_PUNCH', '_SCRATCH', '_VICEGRIP', '_GUILLOTINE', '_SWORDS_DANCE',
+		'_WING_ATTACK', '_WHIRLWIND', '_SLAM', '_VINE_WHIP', '_STOMP',
+		'_DOUBLE_KICK', '_MEGA_KICK', '_JUMP_KICK', '_ROLLING_KICK', '_HORN_ATTACK',
+		'_FURY_ATTACK', '_HORN_DRILL', '_TACKLE', '_BODY_SLAM', '_WRAP',
+		'_TAKE_DOWN', '_POISON_STING', '_TWINEEDLE', '_PIN_MISSILE', '_LEER',
+		'_GROWL', '_ROAR', '_SUPERSONIC', '_ACID', '_EMBER',
+		'_WATER_GUN', '_HYDRO_PUMP', '_SURF', '_ICE_BEAM', '_BLIZZARD',
+		'_BUBBLEBEAM', '_HYPER_BEAM', '_PECK', '_DRILL_PECK', '_SEISMIC_TOSS',
+		'_MEGA_DRAIN', '_LEECH_SEED', '_RAZOR_LEAF', '_POISONPOWDER', '_SLEEP_POWDER',
+		'_PETAL_DANCE', '_DRAGON_RAGE', '_FIRE_SPIN', '_THUNDERSHOCK', '_THUNDER_WAVE',
+		'_TOXIC', '_CONFUSION', '_MEDITATE', '_QUICK_ATTACK', '_TELEPORT',
+		'_NIGHT_SHADE', '_MIMIC', '_MINIMIZE', '_DEFENSE_CURL', '_BARRIER',
+		'_LIGHT_SCREEN', '_REFLECT', '_METRONOME', '_EGG_BOMB', '_SLUDGE',
+		'_BONE_CLUB', '_FIRE_BLAST', '_WATERFALL', '_SKULL_BASH', '_SPIKE_CANNON',
+		'_AMNESIA', '_SOFTBOILED', '_HI_JUMP_KICK', '_GLARE', '_DREAM_EATER',
+		'_POISON_GAS', '_BARRAGE', '_TRANSFORM', '_DIZZY_PUNCH', '_FLASH',
+		'_SPLASH', '_ACID_ARMOR', '_EXPLOSION', '_FURY_SWIPES', '_BONEMERANG',
+		'_REST', '_HYPER_FANG', '_CONVERSION', '_TRI_ATTACK', '_SUBSTITUTE',
+		'_STRUGGLE', '_TRIPLE_KICK', '_THIEF', '_CURSE', '_CONVERSION_2',
+		'_COTTON_SPORE', '_PROTECT', '_MACH_PUNCH', '_FAINT_ATTACK', '_SWEET_KISS',
+		'_BELLY_DRUM', '_SLUDGE_BOMB', '_MUD_SLAP', '_SPIKES', '_ZAP_CANNON',
+		'_FORESIGHT', '_DESTINY_BOND', '_PERISH_SONG', '_DETECT', '_BONE_RUSH',
+		'_LOCK_ON', '_FALSE_SWIPE', '_MILK_DRINK', '_FURY_CUTTER', '_STEEL_WING',
+		'_ATTRACT', '_SLEEP_TALK', '_PRESENT', '_FRUSTRATION', '_MAGNITUDE',
+		'_DYNAMICPUNCH', '_MEGAHORN', '_DRAGONBREATH', '_BATON_PASS', '_METAL_CLAW',
+		'_MOONLIGHT', '_HIDDEN_POWER', '_TWISTER', '_SUNNY_DAY', '_MIRROR_COAT',
+		'_FUTURE_SIGHT', '_BEAT_UP', '_FAKE_OUT', '_STOCKPILE', '_SPIT_UP',
+		'_SWALLOW', '_HEAT_WAVE', '_TAUNT', '_HELPING_HAND', '_TRICK',
+		'_ROLE_PLAY', '_WISH', '_ASSIST', '_INGRAIN', '_SUPERPOWER',
+		'_MAGIC_COAT', '_RECYCLE', '_REVENGE', '_KNOCK_OFF', '_ERUPTION',
+		'_IMPRISON', '_REFRESH', '_SNATCH', '_SECRET_POWER', '_DIVE',
+		'_ARM_THRUST', '_CAMOUFLAGE', '_TAIL_GLOW', '_LUSTER_PURGE', '_MIST_BALL',
+		'_FEATHERDANCE', '_TEETER_DANCE', '_BLAZE_KICK', '_MUD_SPORT', '_NEEDLE_ARM',
+		'_SLACK_OFF', '_HYPER_VOICE', '_POISON_FANG', '_CRUSH_CLAW', '_MUDDY_WATER',
+		'_BULLET_SEED', '_AERIAL_ACE', '_IRON_DEFENSE', '_BLOCK', '_HOWL',
+		'_DRAGON_CLAW', '_BULK_UP', '_BOUNCE', '_MUD_SHOT', '_POISON_TAIL',
+		'_COVET', '_MAGICAL_LEAF', '_WATER_SPORT', '_CALM_MIND', '_LEAF_BLADE',
+		'_DRAGON_DANCE', '_ROCK_BLAST', '_SHOCK_WAVE', '_WATER_PULSE', 'KTHX_BYE_',
+		'YES_SIR_', 'AVANT_GARDE', 'COUPLE', 'MUCH_OBLIGED', 'YEEHAW_',
+		'MEGA', '_1_HIT_KO_', 'DESTINY', 'CANCEL', 'NEW',
+		'FLATTEN', 'KIDDING', 'LOSER', 'LOSING', 'HAPPENING',
+		'HIP_AND', 'SHAKE', 'SHADY', 'UPBEAT', 'MODERN',
+		'SMELL_YA', 'BANG', 'KNOCKOUT', 'HASSLE', 'WINNER',
+		'FEVER', 'WANNABE', 'BABY', 'HEART', 'OLD',
+		'YOUNG', 'UGLY', '__BULBASAUR', '__IVYSAUR', '__VENUSAUR',
+		'__CHARMANDER', '__CHARMELEON', '__CHARIZARD', '__SQUIRTLE', '__WARTORTLE',
+		'__BLASTOISE', '__CATERPIE', '__METAPOD', '__BUTTERFREE', '__WEEDLE',
+		'__KAKUNA', '__BEEDRILL', '__PIDGEY', '__PIDGEOTTO', '__PIDGEOT',
+		'__RATTATA', '__RATICATE', '__SPEAROW', '__FEAROW', '__EKANS',
+		'__ARBOK', '__PIKACHU', '__RAICHU', '__SANDSHREW', '__SANDSLASH',
+		'__NIDORAN_F', '__NIDORINA', '__NIDOQUEEN', '__NIDORAN_M', '__NIDORINO',
+		'__NIDOKING', '__CLEFAIRY', '__CLEFABLE', '__VULPIX', '__NINETALES',
+		'__JIGGLYPUFF', '__WIGGLYTUFF', '__ZUBAT', '__GOLBAT', '__ODDISH',
+		'__GLOOM', '__VILEPLUME', '__PARAS', '__PARASECT', '__VENONAT',
+		'__VENOMOTH', '__DIGLETT', '__DUGTRIO', '__MEOWTH', '__PERSIAN',
+		'__PSYDUCK', '__GOLDUCK', '__MANKEY', '__PRIMEAPE', '__GROWLITHE',
+		'__ARCANINE', '__POLIWAG', '__POLIWHIRL', '__POLIWRATH', '__ABRA',
+		'__KADABRA', '__ALAKAZAM', '__MACHOP', '__MACHOKE', '__MACHAMP',
+		'__BELLSPROUT', '__WEEPINBELL', '__VICTREEBEL', '__TENTACOOL', '__TENTACRUEL',
+		'__GEODUDE', '__GRAVELER', '__GOLEM', '__PONYTA', '__RAPIDASH',
+		'__SLOWPOKE', '__SLOWBRO', '__MAGNEMITE', '__MAGNETON', '__FARFETCH_D',
+		'__DODUO', '__DODRIO', '__SEEL', '__DEWGONG', '__GRIMER',
+		'__MUK', '__SHELLDER', '__CLOYSTER', '__GASTLY', '__HAUNTER',
+		'__GENGAR', '__ONIX', '__DROWZEE', '__HYPNO', '__KRABBY',
+		'__KINGLER', '__VOLTORB', '__ELECTRODE', '__EXEGGCUTE', '__EXEGGUTOR',
+		'__CUBONE', '__MAROWAK', '__HITMONLEE', '__HITMONCHAN', '__LICKITUNG',
+		'__KOFFING', '__WEEZING', '__RHYHORN', '__RHYDON', '__CHANSEY',
+		'__TANGELA', '__KANGASKHAN', '__HORSEA', '__SEADRA', '__GOLDEEN',
+		'__SEAKING', '__STARYU', '__STARMIE', '__MR_MIME', '__SCYTHER',
+		'__JYNX', '__ELECTABUZZ', '__MAGMAR', '__PINSIR', '__TAUROS',
+		'__MAGIKARP', '__GYARADOS', '__LAPRAS', '__DITTO', '__EEVEE',
+		'__VAPOREON', '__JOLTEON', '__FLAREON', '__PORYGON', '__OMANYTE',
+		'__OMASTAR', '__KABUTO', '__KABUTOPS', '__AERODACTYL', '__SNORLAX',
+		'__ARTICUNO', '__ZAPDOS', '__MOLTRES', '__DRATINI', '__DRAGONAIR',
+		'__DRAGONITE', '__MEWTWO', '__MEW', '__CHIKORITA', '__BAYLEEF',
+		'__MEGANIUM', '__CYNDAQUIL', '__QUILAVA', '__TYPHLOSION', '__TOTODILE',
+		'__CROCONAW', '__FERALIGATR', '__SENTRET', '__FURRET', '__HOOTHOOT',
+		'__NOCTOWL', '__LEDYBA', '__LEDIAN', '__SPINARAK', '__ARIADOS',
+		'__CROBAT', '__CHINCHOU', '__LANTURN', '__PICHU', '__CLEFFA',
+		'__IGGLYBUFF', '__TOGEPI', '__TOGETIC', '__NATU', '__XATU',
+		'__MAREEP', '__FLAAFFY', '__AMPHAROS', '__BELLOSSOM', '__MARILL',
+		'__AZUMARILL', '__SUDOWOODO', '__POLITOED', '__HOPPIP', '__SKIPLOOM',
+		'__JUMPLUFF', '__AIPOM', '__SUNKERN', '__SUNFLORA', '__YANMA',
+		'__WOOPER', '__QUAGSIRE', '__ESPEON', '__UMBREON', '__MURKROW',
+		'__SLOWKING', '__MISDREAVUS', '__UNOWN', '__WOBBUFFET', '__GIRAFARIG',
+		'__PINECO', '__FORRETRESS', '__DUNSPARCE', '__GLIGAR', '__STEELIX',
+		'__SNUBBULL', '__GRANBULL', '__QWILFISH', '__SCIZOR', '__SHUCKLE',
+		'__HERACROSS', '__SNEASEL', '__TEDDIURSA', '__URSARING', '__SLUGMA',
+		'__MAGCARGO', '__SWINUB', '__PILOSWINE', '__CORSOLA', '__REMORAID',
+		'__OCTILLERY', '__DELIBIRD', '__MANTINE', '__SKARMORY', '__HOUNDOUR',
+		'__HOUNDOOM', '__KINGDRA', '__PHANPY', '__DONPHAN', '__PORYGON2',
+		'__STANTLER', '__SMEARGLE', '__TYROGUE', '__HITMONTOP', '__SMOOCHUM',
+		'__ELEKID', '__MAGBY', '__MILTANK', '__BLISSEY', '__RAIKOU',
+		'__ENTEI', '__SUICUNE', '__LARVITAR', '__PUPITAR', '__TYRANITAR',
+		'__LUGIA', '__HO_OH', '__CELEBI', 'BLANK',
+	];
+	EZ_CHAT.sort();
+
+	var HELD_ITEMS = [
+		'ITEM_NONE', 'MASTER_BALL', 'ULTRA_BALL', 'GREAT_BALL', 'POKE_BALL',
+		'SAFARI_BALL', 'NET_BALL', 'DIVE_BALL', 'NEST_BALL', 'REPEAT_BALL',
+		'TIMER_BALL', 'LUXURY_BALL', 'PREMIER_BALL', 'POTION', 'ANTIDOTE',
+		'BURN_HEAL', 'ICE_HEAL', 'AWAKENING', 'PARLYZ_HEAL', 'FULL_RESTORE',
+		'MAX_POTION', 'HYPER_POTION', 'SUPER_POTION', 'FULL_HEAL', 'REVIVE',
+		'MAX_REVIVE', 'FRESH_WATER', 'SODA_POP', 'LEMONADE', 'MOOMOO_MILK',
+		'ENERGYPOWDER', 'ENERGY_ROOT', 'HEAL_POWDER', 'REVIVAL_HERB', 'ETHER',
+		'MAX_ETHER', 'ELIXIR', 'MAX_ELIXIR', 'LAVA_COOKIE', 'BLUE_FLUTE',
+		'YELLOW_FLUTE', 'RED_FLUTE', 'BLACK_FLUTE', 'WHITE_FLUTE', 'BERRY_JUICE',
+		'SACRED_ASH', 'SHOAL_SALT', 'SHOAL_SHELL', 'RED_SHARD', 'BLUE_SHARD',
+		'YELLOW_SHARD', 'GREEN_SHARD', 'HP_UP', 'PROTEIN', 'IRON',
+		'CARBOS', 'CALCIUM', 'RARE_CANDY', 'PP_UP', 'ZINC',
+		'PP_MAX', 'GUARD_SPEC_', 'DIRE_HIT', 'X_ATTACK', 'X_DEFEND',
+		'X_SPEED', 'X_ACCURACY', 'X_SPECIAL', 'POKE_DOLL', 'FLUFFY_TAIL',
+		'SUPER_REPEL', 'MAX_REPEL', 'ESCAPE_ROPE', 'REPEL', 'SUN_STONE',
+		'MOON_STONE', 'FIRE_STONE', 'THUNDERSTONE', 'WATER_STONE', 'LEAF_STONE',
+		'TINYMUSHROOM', 'BIG_MUSHROOM', 'PEARL', 'BIG_PEARL', 'STARDUST',
+		'STAR_PIECE', 'NUGGET', 'HEART_SCALE', 'ORANGE_MAIL', 'HARBOR_MAIL',
+		'GLITTER_MAIL', 'MECH_MAIL', 'WOOD_MAIL', 'WAVE_MAIL', 'BEAD_MAIL',
+		'SHADOW_MAIL', 'TROPIC_MAIL', 'DREAM_MAIL', 'FAB_MAIL', 'RETRO_MAIL',
+		'CHERI_BERRY', 'CHESTO_BERRY', 'PECHA_BERRY', 'RAWST_BERRY', 'ASPEAR_BERRY',
+		'LEPPA_BERRY', 'ORAN_BERRY', 'PERSIM_BERRY', 'LUM_BERRY', 'SITRUS_BERRY',
+		'FIGY_BERRY', 'WIKI_BERRY', 'MAGO_BERRY', 'AGUAV_BERRY', 'IAPAPA_BERRY',
+		'RAZZ_BERRY', 'BLUK_BERRY', 'NANAB_BERRY', 'WEPEAR_BERRY', 'PINAP_BERRY',
+		'POMEG_BERRY', 'KELPSY_BERRY', 'QUALOT_BERRY', 'HONDEW_BERRY', 'GREPA_BERRY',
+		'TAMATO_BERRY', 'CORNN_BERRY', 'MAGOST_BERRY', 'RABUTA_BERRY', 'NOMEL_BERRY',
+		'SPELON_BERRY', 'PAMTRE_BERRY', 'WATMEL_BERRY', 'DURIN_BERRY', 'BELUE_BERRY',
+		'LIECHI_BERRY', 'GANLON_BERRY', 'SALAC_BERRY', 'PETAYA_BERRY', 'APICOT_BERRY',
+		'LANSAT_BERRY', 'STARF_BERRY', 'ENIGMA_BERRY', 'BRIGHTPOWDER', 'WHITE_HERB',
+		'MACHO_BRACE', 'EXP_SHARE', 'QUICK_CLAW', 'SOOTHE_BELL', 'MENTAL_HERB',
+		'CHOICE_BAND', 'KING_S_ROCK', 'SILVERPOWDER', 'AMULET_COIN', 'CLEANSE_TAG',
+		'SOUL_DEW', 'DEEPSEATOOTH', 'DEEPSEASCALE', 'SMOKE_BALL', 'EVERSTONE',
+		'FOCUS_BAND', 'LUCKY_EGG', 'SCOPE_LENS', 'METAL_COAT', 'LEFTOVERS',
+		'DRAGON_SCALE', 'LIGHT_BALL', 'SOFT_SAND', 'HARD_STONE', 'MIRACLE_SEED',
+		'BLACKGLASSES', 'BLACK_BELT', 'MAGNET', 'MYSTIC_WATER', 'SHARP_BEAK',
+		'POISON_BARB', 'NEVERMELTICE', 'SPELL_TAG', 'TWISTEDSPOON', 'CHARCOAL',
+		'DRAGON_FANG', 'SILK_SCARF', 'UP_GRADE', 'SHELL_BELL', 'SEA_INCENSE',
+		'LAX_INCENSE', 'LUCKY_PUNCH', 'METAL_POWDER', 'THICK_CLUB', 'STICK',
+		'RED_SCARF', 'BLUE_SCARF', 'PINK_SCARF', 'GREEN_SCARF', 'YELLOW_SCARF',
+		'MACH_BIKE', 'COIN_CASE', 'ITEMFINDER', 'OLD_ROD', 'GOOD_ROD',
+		'SUPER_ROD', 'S_S_TICKET', 'CONTEST_PASS', 'WAILMER_PAIL', 'DEVON_GOODS',
+		'SOOT_SACK', 'BASEMENT_KEY', 'ACRO_BIKE', 'POKEBLOCK_CASE', 'LETTER',
+		'EON_TICKET', 'RED_ORB', 'BLUE_ORB', 'SCANNER', 'GO_GOGGLES',
+		'METEORITE', 'RM_1_KEY', 'RM_2_KEY', 'RM_4_KEY', 'RM_6_KEY',
+		'STORAGE_KEY', 'ROOT_FOSSIL', 'CLAW_FOSSIL', 'DEVON_SCOPE', 'TM01',
+		'TM02', 'TM03', 'TM04', 'TM05', 'TM06',
+		'TM07', 'TM08', 'TM09', 'TM10', 'TM11',
+		'TM12', 'TM13', 'TM14', 'TM15', 'TM16',
+		'TM17', 'TM18', 'TM19', 'TM20', 'TM21',
+		'TM22', 'TM23', 'TM24', 'TM25', 'TM26',
+		'TM27', 'TM28', 'TM29', 'TM30', 'TM31',
+		'TM32', 'TM33', 'TM34', 'TM35', 'TM36',
+		'TM37', 'TM38', 'TM39', 'TM40', 'TM41',
+		'TM42', 'TM43', 'TM44', 'TM45', 'TM46',
+		'TM47', 'TM48', 'TM49', 'TM50', 'HM01',
+		'HM02', 'HM03', 'HM04', 'HM05', 'HM06',
+		'HM07', 'HM08',
+	];
+	HELD_ITEMS.sort();
+
+	var MOVES = [
+		'POUND', 'KARATE_CHOP', 'DOUBLESLAP', 'COMET_PUNCH', 'MEGA_PUNCH',
+		'PAY_DAY', 'FIRE_PUNCH', 'ICE_PUNCH', 'THUNDERPUNCH', 'SCRATCH',
+		'VICEGRIP', 'GUILLOTINE', 'RAZOR_WIND', 'SWORDS_DANCE', 'CUT',
+		'GUST', 'WING_ATTACK', 'WHIRLWIND', 'FLY', 'BIND',
+		'SLAM', 'VINE_WHIP', 'STOMP', 'DOUBLE_KICK', 'MEGA_KICK',
+		'JUMP_KICK', 'ROLLING_KICK', 'SAND_ATTACK', 'HEADBUTT', 'HORN_ATTACK',
+		'FURY_ATTACK', 'HORN_DRILL', 'TACKLE', 'BODY_SLAM', 'WRAP',
+		'TAKE_DOWN', 'THRASH', 'DOUBLE_EDGE', 'TAIL_WHIP', 'POISON_STING',
+		'TWINEEDLE', 'PIN_MISSILE', 'LEER', 'BITE', 'GROWL',
+		'ROAR', 'SING', 'SUPERSONIC', 'SONICBOOM', 'DISABLE',
+		'ACID', 'EMBER', 'FLAMETHROWER', 'MIST', 'WATER_GUN',
+		'HYDRO_PUMP', 'SURF', 'ICE_BEAM', 'BLIZZARD', 'PSYBEAM',
+		'BUBBLEBEAM', 'AURORA_BEAM', 'HYPER_BEAM', 'PECK', 'DRILL_PECK',
+		'SUBMISSION', 'LOW_KICK', 'COUNTER', 'SEISMIC_TOSS', 'STRENGTH',
+		'ABSORB', 'MEGA_DRAIN', 'LEECH_SEED', 'GROWTH', 'RAZOR_LEAF',
+		'SOLARBEAM', 'POISONPOWDER', 'STUN_SPORE', 'SLEEP_POWDER', 'PETAL_DANCE',
+		'STRING_SHOT', 'DRAGON_RAGE', 'FIRE_SPIN', 'THUNDERSHOCK', 'THUNDERBOLT',
+		'THUNDER_WAVE', 'THUNDER', 'ROCK_THROW', 'EARTHQUAKE', 'FISSURE',
+		'DIG', 'TOXIC', 'CONFUSION', 'PSYCHIC', 'HYPNOSIS',
+		'MEDITATE', 'AGILITY', 'QUICK_ATTACK', 'RAGE', 'TELEPORT',
+		'NIGHT_SHADE', 'MIMIC', 'SCREECH', 'DOUBLE_TEAM', 'RECOVER',
+		'HARDEN', 'MINIMIZE', 'SMOKESCREEN', 'CONFUSE_RAY', 'WITHDRAW',
+		'DEFENSE_CURL', 'BARRIER', 'LIGHT_SCREEN', 'HAZE', 'REFLECT',
+		'FOCUS_ENERGY', 'BIDE', 'METRONOME', 'MIRROR_MOVE', 'SELFDESTRUCT',
+		'EGG_BOMB', 'LICK', 'SMOG', 'SLUDGE', 'BONE_CLUB',
+		'FIRE_BLAST', 'WATERFALL', 'CLAMP', 'SWIFT', 'SKULL_BASH',
+		'SPIKE_CANNON', 'CONSTRICT', 'AMNESIA', 'KINESIS', 'SOFTBOILED',
+		'HI_JUMP_KICK', 'GLARE', 'DREAM_EATER', 'POISON_GAS', 'BARRAGE',
+		'LEECH_LIFE', 'LOVELY_KISS', 'SKY_ATTACK', 'TRANSFORM', 'BUBBLE',
+		'DIZZY_PUNCH', 'SPORE', 'FLASH', 'PSYWAVE', 'SPLASH',
+		'ACID_ARMOR', 'CRABHAMMER', 'EXPLOSION', 'FURY_SWIPES', 'BONEMERANG',
+		'REST', 'ROCK_SLIDE', 'HYPER_FANG', 'SHARPEN', 'CONVERSION',
+		'TRI_ATTACK', 'SUPER_FANG', 'SLASH', 'SUBSTITUTE', 'STRUGGLE',
+		'SKETCH', 'TRIPLE_KICK', 'THIEF', 'SPIDER_WEB', 'MIND_READER',
+		'NIGHTMARE', 'FLAME_WHEEL', 'SNORE', 'CURSE', 'FLAIL',
+		'CONVERSION_2', 'AEROBLAST', 'COTTON_SPORE', 'REVERSAL', 'SPITE',
+		'POWDER_SNOW', 'PROTECT', 'MACH_PUNCH', 'SCARY_FACE', 'FAINT_ATTACK',
+		'SWEET_KISS', 'BELLY_DRUM', 'SLUDGE_BOMB', 'MUD_SLAP', 'OCTAZOOKA',
+		'SPIKES', 'ZAP_CANNON', 'FORESIGHT', 'DESTINY_BOND', 'PERISH_SONG',
+		'ICY_WIND', 'DETECT', 'BONE_RUSH', 'LOCK_ON', 'OUTRAGE',
+		'SANDSTORM', 'GIGA_DRAIN', 'ENDURE', 'CHARM', 'ROLLOUT',
+		'FALSE_SWIPE', 'SWAGGER', 'MILK_DRINK', 'SPARK', 'FURY_CUTTER',
+		'STEEL_WING', 'MEAN_LOOK', 'ATTRACT', 'SLEEP_TALK', 'HEAL_BELL',
+		'RETURN', 'PRESENT', 'FRUSTRATION', 'SAFEGUARD', 'PAIN_SPLIT',
+		'SACRED_FIRE', 'MAGNITUDE', 'DYNAMICPUNCH', 'MEGAHORN', 'DRAGONBREATH',
+		'BATON_PASS', 'ENCORE', 'PURSUIT', 'RAPID_SPIN', 'SWEET_SCENT',
+		'IRON_TAIL', 'METAL_CLAW', 'VITAL_THROW', 'MORNING_SUN', 'SYNTHESIS',
+		'MOONLIGHT', 'HIDDEN_POWER', 'CROSS_CHOP', 'TWISTER', 'RAIN_DANCE',
+		'SUNNY_DAY', 'CRUNCH', 'MIRROR_COAT', 'PSYCH_UP', 'EXTREMESPEED',
+		'ANCIENTPOWER', 'SHADOW_BALL', 'FUTURE_SIGHT', 'ROCK_SMASH', 'WHIRLPOOL',
+		'BEAT_UP', 'FAKE_OUT', 'UPROAR', 'STOCKPILE', 'SPIT_UP',
+		'SWALLOW', 'HEAT_WAVE', 'HAIL', 'TORMENT', 'FLATTER',
+		'WILL_O_WISP', 'MEMENTO', 'FACADE', 'FOCUS_PUNCH', 'SMELLINGSALT',
+		'FOLLOW_ME', 'NATURE_POWER', 'CHARGE', 'TAUNT', 'HELPING_HAND',
+		'TRICK', 'ROLE_PLAY', 'WISH', 'ASSIST', 'INGRAIN',
+		'SUPERPOWER', 'MAGIC_COAT', 'RECYCLE', 'REVENGE', 'BRICK_BREAK',
+		'YAWN', 'KNOCK_OFF', 'ENDEAVOR', 'ERUPTION', 'SKILL_SWAP',
+		'IMPRISON', 'REFRESH', 'GRUDGE', 'SNATCH', 'SECRET_POWER',
+		'DIVE', 'ARM_THRUST', 'CAMOUFLAGE', 'TAIL_GLOW', 'LUSTER_PURGE',
+		'MIST_BALL', 'FEATHERDANCE', 'TEETER_DANCE', 'BLAZE_KICK', 'MUD_SPORT',
+		'ICE_BALL', 'NEEDLE_ARM', 'SLACK_OFF', 'HYPER_VOICE', 'POISON_FANG',
+		'CRUSH_CLAW', 'BLAST_BURN', 'HYDRO_CANNON', 'METEOR_MASH', 'ASTONISH',
+		'WEATHER_BALL', 'AROMATHERAPY', 'FAKE_TEARS', 'AIR_CUTTER', 'OVERHEAT',
+		'ODOR_SLEUTH', 'ROCK_TOMB', 'SILVER_WIND', 'METAL_SOUND', 'GRASSWHISTLE',
+		'TICKLE', 'COSMIC_POWER', 'WATER_SPOUT', 'SIGNAL_BEAM', 'SHADOW_PUNCH',
+		'EXTRASENSORY', 'SKY_UPPERCUT', 'SAND_TOMB', 'SHEER_COLD', 'MUDDY_WATER',
+		'BULLET_SEED', 'AERIAL_ACE', 'ICICLE_SPEAR', 'IRON_DEFENSE', 'BLOCK',
+		'HOWL', 'DRAGON_CLAW', 'FRENZY_PLANT', 'BULK_UP', 'BOUNCE',
+		'MUD_SHOT', 'POISON_TAIL', 'COVET', 'VOLT_TACKLE', 'MAGICAL_LEAF',
+		'WATER_SPORT', 'CALM_MIND', 'LEAF_BLADE', 'DRAGON_DANCE', 'ROCK_BLAST',
+		'SHOCK_WAVE', 'WATER_PULSE', 'DOOM_DESIRE', 'PSYCHO_BOOST',
+	];
+	MOVES.sort();
+
+	var ABILITIES = [
+		'BULBASAUR_OVERGROW', 'IVYSAUR_OVERGROW', 'VENUSAUR_OVERGROW', 'CHARMANDER_BLAZE', 'CHARMELEON_BLAZE',
+		'CHARIZARD_BLAZE', 'SQUIRTLE_TORRENT', 'WARTORTLE_TORRENT', 'BLASTOISE_TORRENT', 'CATERPIE_SHIELD_DUST',
+		'METAPOD_SHED_SKIN', 'BUTTERFREE_COMPOUNDEYES', 'WEEDLE_SHIELD_DUST', 'KAKUNA_SHED_SKIN', 'BEEDRILL_SWARM',
+		'PIDGEY_KEEN_EYE', 'PIDGEOTTO_KEEN_EYE', 'PIDGEOT_KEEN_EYE', 'RATTATA_RUN_AWAY', 'RATTATA_GUTS',
+		'RATICATE_RUN_AWAY', 'RATICATE_GUTS', 'SPEAROW_KEEN_EYE', 'FEAROW_KEEN_EYE', 'EKANS_INTIMIDATE',
+		'EKANS_SHED_SKIN', 'ARBOK_INTIMIDATE', 'ARBOK_SHED_SKIN', 'PIKACHU_STATIC', 'RAICHU_STATIC',
+		'SANDSHREW_SAND_VEIL', 'SANDSLASH_SAND_VEIL', 'NIDORAN_F_POISON_POINT', 'NIDORINA_POISON_POINT', 'NIDOQUEEN_POISON_POINT',
+		'NIDORAN_M_POISON_POINT', 'NIDORINO_POISON_POINT', 'NIDOKING_POISON_POINT', 'CLEFAIRY_CUTE_CHARM', 'CLEFABLE_CUTE_CHARM',
+		'VULPIX_FLASH_FIRE', 'NINETALES_FLASH_FIRE', 'JIGGLYPUFF_CUTE_CHARM', 'WIGGLYTUFF_CUTE_CHARM', 'ZUBAT_INNER_FOCUS',
+		'GOLBAT_INNER_FOCUS', 'ODDISH_CHLOROPHYLL', 'GLOOM_CHLOROPHYLL', 'VILEPLUME_CHLOROPHYLL', 'PARAS_EFFECT_SPORE',
+		'PARASECT_EFFECT_SPORE', 'VENONAT_COMPOUNDEYES', 'VENOMOTH_SHIELD_DUST', 'DIGLETT_SAND_VEIL', 'DIGLETT_ARENA_TRAP',
+		'DUGTRIO_SAND_VEIL', 'DUGTRIO_ARENA_TRAP', 'MEOWTH_PICKUP', 'PERSIAN_LIMBER', 'PSYDUCK_DAMP',
+		'PSYDUCK_CLOUD_NINE', 'GOLDUCK_DAMP', 'GOLDUCK_CLOUD_NINE', 'MANKEY_VITAL_SPIRIT', 'PRIMEAPE_VITAL_SPIRIT',
+		'GROWLITHE_INTIMIDATE', 'GROWLITHE_FLASH_FIRE', 'ARCANINE_INTIMIDATE', 'ARCANINE_FLASH_FIRE', 'POLIWAG_WATER_ABSORB',
+		'POLIWAG_DAMP', 'POLIWHIRL_WATER_ABSORB', 'POLIWHIRL_DAMP', 'POLIWRATH_WATER_ABSORB', 'POLIWRATH_DAMP',
+		'ABRA_SYNCHRONIZE', 'ABRA_INNER_FOCUS', 'KADABRA_SYNCHRONIZE', 'KADABRA_INNER_FOCUS', 'ALAKAZAM_SYNCHRONIZE',
+		'ALAKAZAM_INNER_FOCUS', 'MACHOP_GUTS', 'MACHOKE_GUTS', 'MACHAMP_GUTS', 'BELLSPROUT_CHLOROPHYLL',
+		'WEEPINBELL_CHLOROPHYLL', 'VICTREEBEL_CHLOROPHYLL', 'TENTACOOL_CLEAR_BODY', 'TENTACOOL_LIQUID_OOZE', 'TENTACRUEL_CLEAR_BODY',
+		'TENTACRUEL_LIQUID_OOZE', 'GEODUDE_ROCK_HEAD', 'GEODUDE_STURDY', 'GRAVELER_ROCK_HEAD', 'GRAVELER_STURDY',
+		'GOLEM_ROCK_HEAD', 'GOLEM_STURDY', 'PONYTA_RUN_AWAY', 'PONYTA_FLASH_FIRE', 'RAPIDASH_RUN_AWAY',
+		'RAPIDASH_FLASH_FIRE', 'SLOWPOKE_OBLIVIOUS', 'SLOWPOKE_OWN_TEMPO', 'SLOWBRO_OBLIVIOUS', 'SLOWBRO_OWN_TEMPO',
+		'MAGNEMITE_MAGNET_PULL', 'MAGNEMITE_STURDY', 'MAGNETON_MAGNET_PULL', 'MAGNETON_STURDY', 'FARFETCH_D_KEEN_EYE',
+		'FARFETCH_D_INNER_FOCUS', 'DODUO_RUN_AWAY', 'DODUO_EARLY_BIRD', 'DODRIO_RUN_AWAY', 'DODRIO_EARLY_BIRD',
+		'SEEL_THICK_FAT', 'DEWGONG_THICK_FAT', 'GRIMER_STENCH', 'GRIMER_STICKY_HOLD', 'MUK_STENCH',
+		'MUK_STICKY_HOLD', 'SHELLDER_SHELL_ARMOR', 'CLOYSTER_SHELL_ARMOR', 'GASTLY_LEVITATE', 'HAUNTER_LEVITATE',
+		'GENGAR_LEVITATE', 'ONIX_ROCK_HEAD', 'ONIX_STURDY', 'DROWZEE_INSOMNIA', 'HYPNO_INSOMNIA',
+		'KRABBY_HYPER_CUTTER', 'KRABBY_SHELL_ARMOR', 'KINGLER_HYPER_CUTTER', 'KINGLER_SHELL_ARMOR', 'VOLTORB_SOUNDPROOF',
+		'VOLTORB_STATIC', 'ELECTRODE_SOUNDPROOF', 'ELECTRODE_STATIC', 'EXEGGCUTE_CHLOROPHYLL', 'EXEGGUTOR_CHLOROPHYLL',
+		'CUBONE_ROCK_HEAD', 'CUBONE_LIGHTNINGROD', 'MAROWAK_ROCK_HEAD', 'MAROWAK_LIGHTNINGROD', 'HITMONLEE_LIMBER',
+		'HITMONCHAN_KEEN_EYE', 'LICKITUNG_OWN_TEMPO', 'LICKITUNG_OBLIVIOUS', 'KOFFING_LEVITATE', 'WEEZING_LEVITATE',
+		'RHYHORN_LIGHTNINGROD', 'RHYHORN_ROCK_HEAD', 'RHYDON_LIGHTNINGROD', 'RHYDON_ROCK_HEAD', 'CHANSEY_NATURAL_CURE',
+		'CHANSEY_SERENE_GRACE', 'TANGELA_CHLOROPHYLL', 'KANGASKHAN_EARLY_BIRD', 'HORSEA_SWIFT_SWIM', 'SEADRA_POISON_POINT',
+		'GOLDEEN_SWIFT_SWIM', 'GOLDEEN_WATER_VEIL', 'SEAKING_SWIFT_SWIM', 'SEAKING_WATER_VEIL', 'STARYU_ILLUMINATE',
+		'STARYU_NATURAL_CURE', 'STARMIE_ILLUMINATE', 'STARMIE_NATURAL_CURE', 'MR_MIME_SOUNDPROOF', 'SCYTHER_SWARM',
+		'JYNX_OBLIVIOUS', 'ELECTABUZZ_STATIC', 'MAGMAR_FLAME_BODY', 'PINSIR_HYPER_CUTTER', 'TAUROS_INTIMIDATE',
+		'MAGIKARP_SWIFT_SWIM', 'GYARADOS_INTIMIDATE', 'LAPRAS_WATER_ABSORB', 'LAPRAS_SHELL_ARMOR', 'DITTO_LIMBER',
+		'EEVEE_RUN_AWAY', 'VAPOREON_WATER_ABSORB', 'JOLTEON_VOLT_ABSORB', 'FLAREON_FLASH_FIRE', 'PORYGON_TRACE',
+		'OMANYTE_SWIFT_SWIM', 'OMANYTE_SHELL_ARMOR', 'OMASTAR_SWIFT_SWIM', 'OMASTAR_SHELL_ARMOR', 'KABUTO_SWIFT_SWIM',
+		'KABUTO_BATTLE_ARMOR', 'KABUTOPS_SWIFT_SWIM', 'KABUTOPS_BATTLE_ARMOR', 'AERODACTYL_ROCK_HEAD', 'AERODACTYL_PRESSURE',
+		'SNORLAX_IMMUNITY', 'SNORLAX_THICK_FAT', 'ARTICUNO_PRESSURE', 'ZAPDOS_PRESSURE', 'MOLTRES_PRESSURE',
+		'DRATINI_SHED_SKIN', 'DRAGONAIR_SHED_SKIN', 'DRAGONITE_INNER_FOCUS', 'MEWTWO_PRESSURE', 'MEW_SYNCHRONIZE',
+		'CHIKORITA_OVERGROW', 'BAYLEEF_OVERGROW', 'MEGANIUM_OVERGROW', 'CYNDAQUIL_BLAZE', 'QUILAVA_BLAZE',
+		'TYPHLOSION_BLAZE', 'TOTODILE_TORRENT', 'CROCONAW_TORRENT', 'FERALIGATR_TORRENT', 'SENTRET_RUN_AWAY',
+		'SENTRET_KEEN_EYE', 'FURRET_RUN_AWAY', 'FURRET_KEEN_EYE', 'HOOTHOOT_INSOMNIA', 'HOOTHOOT_KEEN_EYE',
+		'NOCTOWL_INSOMNIA', 'NOCTOWL_KEEN_EYE', 'LEDYBA_SWARM', 'LEDYBA_EARLY_BIRD', 'LEDIAN_SWARM',
+		'LEDIAN_EARLY_BIRD', 'SPINARAK_SWARM', 'SPINARAK_INSOMNIA', 'ARIADOS_SWARM', 'ARIADOS_INSOMNIA',
+		'CROBAT_INNER_FOCUS', 'CHINCHOU_VOLT_ABSORB', 'CHINCHOU_ILLUMINATE', 'LANTURN_VOLT_ABSORB', 'LANTURN_ILLUMINATE',
+		'PICHU_STATIC', 'CLEFFA_CUTE_CHARM', 'IGGLYBUFF_CUTE_CHARM', 'TOGEPI_HUSTLE', 'TOGEPI_SERENE_GRACE',
+		'TOGETIC_HUSTLE', 'TOGETIC_SERENE_GRACE', 'NATU_SYNCHRONIZE', 'NATU_EARLY_BIRD', 'XATU_SYNCHRONIZE',
+		'XATU_EARLY_BIRD', 'MAREEP_STATIC', 'FLAAFFY_STATIC', 'AMPHAROS_STATIC', 'BELLOSSOM_CHLOROPHYLL',
+		'MARILL_THICK_FAT', 'MARILL_HUGE_POWER', 'AZUMARILL_THICK_FAT', 'AZUMARILL_HUGE_POWER', 'SUDOWOODO_STURDY',
+		'SUDOWOODO_ROCK_HEAD', 'POLITOED_WATER_ABSORB', 'POLITOED_DAMP', 'HOPPIP_CHLOROPHYLL', 'SKIPLOOM_CHLOROPHYLL',
+		'JUMPLUFF_CHLOROPHYLL', 'AIPOM_RUN_AWAY', 'AIPOM_PICKUP', 'SUNKERN_CHLOROPHYLL', 'SUNFLORA_CHLOROPHYLL',
+		'YANMA_SPEED_BOOST', 'YANMA_COMPOUNDEYES', 'WOOPER_DAMP', 'WOOPER_WATER_ABSORB', 'QUAGSIRE_DAMP',
+		'QUAGSIRE_WATER_ABSORB', 'ESPEON_SYNCHRONIZE', 'UMBREON_SYNCHRONIZE', 'MURKROW_INSOMNIA', 'SLOWKING_OBLIVIOUS',
+		'SLOWKING_OWN_TEMPO', 'MISDREAVUS_LEVITATE', 'UNOWN_LEVITATE', 'WOBBUFFET_SHADOW_TAG', 'GIRAFARIG_INNER_FOCUS',
+		'GIRAFARIG_EARLY_BIRD', 'PINECO_STURDY', 'FORRETRESS_STURDY', 'DUNSPARCE_SERENE_GRACE', 'DUNSPARCE_RUN_AWAY',
+		'GLIGAR_HYPER_CUTTER', 'GLIGAR_SAND_VEIL', 'STEELIX_ROCK_HEAD', 'STEELIX_STURDY', 'SNUBBULL_INTIMIDATE',
+		'SNUBBULL_RUN_AWAY', 'GRANBULL_INTIMIDATE', 'QWILFISH_POISON_POINT', 'QWILFISH_SWIFT_SWIM', 'SCIZOR_SWARM',
+		'SHUCKLE_STURDY', 'HERACROSS_SWARM', 'HERACROSS_GUTS', 'SNEASEL_INNER_FOCUS', 'SNEASEL_KEEN_EYE',
+		'TEDDIURSA_PICKUP', 'URSARING_GUTS', 'SLUGMA_MAGMA_ARMOR', 'SLUGMA_FLAME_BODY', 'MAGCARGO_MAGMA_ARMOR',
+		'MAGCARGO_FLAME_BODY', 'SWINUB_OBLIVIOUS', 'PILOSWINE_OBLIVIOUS', 'CORSOLA_HUSTLE', 'CORSOLA_NATURAL_CURE',
+		'REMORAID_HUSTLE', 'OCTILLERY_SUCTION_CUPS', 'DELIBIRD_VITAL_SPIRIT', 'DELIBIRD_HUSTLE', 'MANTINE_SWIFT_SWIM',
+		'MANTINE_WATER_ABSORB', 'SKARMORY_KEEN_EYE', 'SKARMORY_STURDY', 'HOUNDOUR_EARLY_BIRD', 'HOUNDOUR_FLASH_FIRE',
+		'HOUNDOOM_EARLY_BIRD', 'HOUNDOOM_FLASH_FIRE', 'KINGDRA_SWIFT_SWIM', 'PHANPY_PICKUP', 'DONPHAN_STURDY',
+		'PORYGON2_TRACE', 'STANTLER_INTIMIDATE', 'SMEARGLE_OWN_TEMPO', 'TYROGUE_GUTS', 'HITMONTOP_INTIMIDATE',
+		'SMOOCHUM_OBLIVIOUS', 'ELEKID_STATIC', 'MAGBY_FLAME_BODY', 'MILTANK_THICK_FAT', 'BLISSEY_NATURAL_CURE',
+		'BLISSEY_SERENE_GRACE', 'RAIKOU_PRESSURE', 'ENTEI_PRESSURE', 'SUICUNE_PRESSURE', 'LARVITAR_GUTS',
+		'PUPITAR_SHED_SKIN', 'TYRANITAR_SAND_STREAM', 'LUGIA_PRESSURE', 'HO_OH_PRESSURE', 'CELEBI_NATURAL_CURE',
+		'TREECKO_OVERGROW', 'GROVYLE_OVERGROW', 'SCEPTILE_OVERGROW', 'TORCHIC_BLAZE', 'COMBUSKEN_BLAZE',
+		'BLAZIKEN_BLAZE', 'MUDKIP_TORRENT', 'MARSHTOMP_TORRENT', 'SWAMPERT_TORRENT', 'POOCHYENA_RUN_AWAY',
+		'MIGHTYENA_INTIMIDATE', 'ZIGZAGOON_PICKUP', 'LINOONE_PICKUP', 'WURMPLE_SHIELD_DUST', 'SILCOON_SHED_SKIN',
+		'BEAUTIFLY_SWARM', 'CASCOON_SHED_SKIN', 'DUSTOX_SHIELD_DUST', 'LOTAD_SWIFT_SWIM', 'LOTAD_RAIN_DISH',
+		'LOMBRE_SWIFT_SWIM', 'LOMBRE_RAIN_DISH', 'LUDICOLO_SWIFT_SWIM', 'LUDICOLO_RAIN_DISH', 'SEEDOT_CHLOROPHYLL',
+		'SEEDOT_EARLY_BIRD', 'NUZLEAF_CHLOROPHYLL', 'NUZLEAF_EARLY_BIRD', 'SHIFTRY_CHLOROPHYLL', 'SHIFTRY_EARLY_BIRD',
+		'TAILLOW_GUTS', 'SWELLOW_GUTS', 'WINGULL_KEEN_EYE', 'PELIPPER_KEEN_EYE', 'RALTS_SYNCHRONIZE',
+		'RALTS_TRACE', 'KIRLIA_SYNCHRONIZE', 'KIRLIA_TRACE', 'GARDEVOIR_SYNCHRONIZE', 'GARDEVOIR_TRACE',
+		'SURSKIT_SWIFT_SWIM', 'MASQUERAIN_INTIMIDATE', 'SHROOMISH_EFFECT_SPORE', 'BRELOOM_EFFECT_SPORE', 'SLAKOTH_TRUANT',
+		'VIGOROTH_VITAL_SPIRIT', 'SLAKING_TRUANT', 'NINCADA_COMPOUNDEYES', 'NINJASK_SPEED_BOOST', 'SHEDINJA_WONDER_GUARD',
+		'WHISMUR_SOUNDPROOF', 'LOUDRED_SOUNDPROOF', 'EXPLOUD_SOUNDPROOF', 'MAKUHITA_THICK_FAT', 'MAKUHITA_GUTS',
+		'HARIYAMA_THICK_FAT', 'HARIYAMA_GUTS', 'AZURILL_THICK_FAT', 'AZURILL_HUGE_POWER', 'NOSEPASS_STURDY',
+		'NOSEPASS_MAGNET_PULL', 'SKITTY_CUTE_CHARM', 'DELCATTY_CUTE_CHARM', 'SABLEYE_KEEN_EYE', 'MAWILE_HYPER_CUTTER',
+		'MAWILE_INTIMIDATE', 'ARON_STURDY', 'ARON_ROCK_HEAD', 'LAIRON_STURDY', 'LAIRON_ROCK_HEAD',
+		'AGGRON_STURDY',
+		'AGGRON_ROCK_HEAD', 'MEDITITE_PURE_POWER', 'MEDICHAM_PURE_POWER', 'ELECTRIKE_STATIC', 'ELECTRIKE_LIGHTNINGROD',
+		'MANECTRIC_STATIC', 'MANECTRIC_LIGHTNINGROD', 'PLUSLE_PLUS', 'MINUN_MINUS', 'VOLBEAT_ILLUMINATE',
+		'VOLBEAT_SWARM', 'ILLUMISE_OBLIVIOUS', 'ROSELIA_NATURAL_CURE', 'ROSELIA_POISON_POINT', 'GULPIN_LIQUID_OOZE',
+		'GULIPN_STICKY_HOLD', 'SWALOT_LIQUID_OOZE', 'SWALOT_STICKY_HOLD', 'CARVANHA_ROUGH_SKIN', 'SHARPEDO_ROUGH_SKIN',
+		'WAILMER_WATER_VEIL', 'WAILMER_OBLIVIOUS', 'WAILORD_WATER_VEIL', 'WAILORD_OBLIVIOUS', 'NUMEL_OBLIVIOUS',
+		'CAMERUPT_MAGMA_ARMOR', 'TORKOAL_WHITE_SMOKE', 'SPOINK_THICK_FAT', 'SPOINK_OWN_TEMPO', 'GRUMPIG_THICK_FAT',
+		'GRUMPIG_OWN_TEMPO', 'SPINDA_OWN_TEMPO', 'TRAPINCH_HYPER_CUTTER', 'TRAPINCH_ARENA_TRAP', 'VIBRAVA_LEVITATE',
+		'FLYGON_LEVITATE', 'CACNEA_SAND_VEIL', 'CACTURNE_SAND_VEIL', 'SWABLU_NATURAL_CURE', 'ALTARIA_NATURAL_CURE',
+		'ZANGOOSE_IMMUNITY', 'SEVIPER_SHED_SKIN', 'LUNATONE_LEVITATE', 'SOLROCK_LEVITATE', 'BARBOACH_OBLIVIOUS',
+		'WHISCASH_OBLIVIOUS', 'CORPHISH_HYPER_CUTTER', 'CORPHISH_SHELL_ARMOR', 'CRAWDAUNT_HYPER_CUTTER', 'CRAWDAUNT_SHELL_ARMOR',
+		'BALTOY_LEVITATE', 'CLAYDOL_LEVITATE', 'LILEEP_SUCTION_CUPS', 'CRADILY_SUCTION_CUPS', 'ANORITH_BATTLE_ARMOR',
+		'ARMALDO_BATTLE_ARMOR', 'FEEBAS_SWIFT_SWIM', 'MILOTIC_MARVEL_SCALE', 'CASTFORM_FORECAST', 'KECLEON_COLOR_CHANGE',
+		'SHUPPET_INSOMNIA', 'BANETTE_INSOMNIA', 'DUSKULL_LEVITATE', 'DUSCLOPS_PRESSURE', 'TROPIUS_CHLOROPHYLL',
+		'CHIMECHO_LEVITATE', 'ABSOL_PRESSURE', 'WYNAUT_SHADOW_TAG', 'SNORUNT_INNER_FOCUS', 'GLALIE_INNER_FOCUS',
+		'SPHEAL_THICK_FAT', 'SEALEO_THICK_FAT', 'WALREIN_THICK_FAT', 'CLAMPERL_SHELL_ARMOR', 'HUNTAIL_SWIFT_SWIM',
+		'GOREBYSS_SWIFT_SWIM', 'RELICANTH_SWIFT_SWIM', 'RELICANTH_ROCK_HEAD', 'LUVDISC_SWIFT_SWIM', 'BAGON_ROCK_HEAD',
+		'SHELGON_ROCK_HEAD', 'SALAMENCE_INTIMIDATE', 'BELDUM_CLEAR_BODY', 'METANG_CLEAR_BODY', 'METAGROSS_CLEAR_BODY',
+		'REGIROCK_CLEAR_BODY', 'REGICE_CLEAR_BODY', 'REGISTEEL_CLEAR_BODY', 'LATIAS_LEVITATE', 'LATIOS_LEVITATE',
+		'KYOGRE_DRIZZLE', 'GROUDON_DROUGHT', 'RAYQUAZA_AIR_LOCK', 'JIRACHI_SERENE_GRACE', 'DEOXYS_PRESSURE',
+	];
+	ABILITIES.sort();
+
+	function update_pokemon_notes(prefix) {
+		var label = document.getElementById(prefix + '_notes');
+
+		var PID_val = document.getElementById(prefix + '_pid').value
+		if (PID_val === "") {
+			label.innerHTML = "";
+			return;
+		}
+		var PID = Number("0x" + PID_val);
+		if (isNaN(PID)) {
+			label.innerHTML = "";
+			return;
+		}
+		var nature = [
+			"Hardy",
+			"Lonely",
+			"Brave",
+			"Adamant",
+			"Naughty",
+			"Bold",
+			"Docile",
+			"Relaxed",
+			"Impish",
+			"Lax",
+			"Timid",
+			"Hasty",
+			"Serious",
+			"Jolly",
+			"Naive",
+			"Modest",
+			"Mild",
+			"Quiet",
+			"Bashful",
+			"Rash",
+			"Calm",
+			"Gentle",
+			"Sassy",
+			"Careful",
+			"Quirky",
+		][PID % 25]
+		label.innerHTML = nature;
+
+		var TID_val = document.getElementById(prefix + '_ot_tid').value
+		var SID_val = document.getElementById(prefix + '_ot_sid').value
+		if (TID_val === "" || SID_val === "") {
+			return;
+		}
+		var TID = Number(TID_val);
+		var SID = Number(SID_val);
+		if (isNaN(TID) || isNaN(SID)) {
+			return;
+		}
+
+		var PID_H = (PID & 0xFFFF0000) >> 16
+		var PID_L = PID & 0x0000FFFF
+
+		if (((TID ^ SID) ^ (PID_H ^ PID_L)) < 8) {
+			label.innerHTML = "Shiny " + nature;
+		}
+	}
+
+	function insert_options(select, options) {
+		for (var i = 0; i < options.length; i++) {
+			var option = options[i];
+			var opt = document.createElement('option');
+			opt.value = option;
+			opt.innerHTML = option;
+			select.appendChild(opt);
+		}
+	}
+
+	function v(id) {
+		return document.getElementById(id).value;
+	}
+
+	function nick1() {
+		var nick = document.getElementById('pokemon_1_nickname').value;
+		if (nick == "") {
+			return document.getElementById('pokemon_1_species').value;
+		}
+		return nick;
+	}
+
+	function nick2() {
+		var nick = document.getElementById('pokemon_2_nickname').value;
+		if (nick == "") {
+			return document.getElementById('pokemon_2_species').value;
+		}
+		return nick;
+	}
+
+	function nick3() {
+		var nick = document.getElementById('pokemon_3_nickname').value;
+		if (nick == "") {
+			return document.getElementById('pokemon_3_species').value;
+		}
+		return nick;
+	}
+
+	function generate() {
+		var content = `INCLUDE "trainers/macros.asm"
+
+    Battle_Trainer
+
+    BT_Level MOSSDEEP
+    Class ${v('trainer_class')}
+    BT_Floor MOSSDEEP
+    Text_EN "${v('trainer_name')}"8
+    OT_ID ${v('trainer_tid')}, ${v('trainer_sid')}
+
+    Intro_EN ${v('intro_1_6')},${v('intro_2_6')},${v('intro_3_6')},${v('intro_4_6')},${v('intro_5_6')},${v('intro_6_6')}
+    Win_EN   ${v('victory_1_6')},${v('victory_2_6')},${v('victory_3_6')},${v('victory_4_6')},${v('victory_5_6')},${v('victory_6_6')}
+    Loss_EN  ${v('defeat_1_6')},${v('defeat_2_6')},${v('defeat_3_6')},${v('defeat_4_6')},${v('defeat_5_6')},${v('defeat_6_6')}
+
+    Pokemon ${v('pokemon_1_species')}
+    Holds ${v('pokemon_1_held_item')}
+    Moves ${v('pokemon_1_move_1')}, ${v('pokemon_1_move_2')}, ${v('pokemon_1_move_3')}, ${v('pokemon_1_move_4')}
+    Level ${v('pokemon_1_level')}
+    PP_Ups ${v('pokemon_1_move_1_pp_ups')}, ${v('pokemon_1_move_2_pp_ups')}, ${v('pokemon_1_move_3_pp_ups')}, ${v('pokemon_1_move_4_pp_ups')}
+    EVs ${v('pokemon_1_ev_1')}, ${v('pokemon_1_ev_2')}, ${v('pokemon_1_ev_3')}, ${v('pokemon_1_ev_4')}, ${v('pokemon_1_ev_5')}, ${v('pokemon_1_ev_6')}
+    OT_ID ${v('pokemon_1_ot_tid')}, ${v('pokemon_1_ot_sid')}
+    IVs ${v('pokemon_1_iv_1')}, ${v('pokemon_1_iv_2')}, ${v('pokemon_1_iv_3')}, ${v('pokemon_1_iv_4')}, ${v('pokemon_1_iv_5')}, ${v('pokemon_1_iv_6')}, ${v('pokemon_1_ability')}
+    PV $${v('pokemon_1_pid')}
+    Text_EN "${nick1()}"11
+    Friendship ${v('pokemon_1_friendship')}
+
+    Pokemon ${v('pokemon_2_species')}
+    Holds ${v('pokemon_2_held_item')}
+    Moves ${v('pokemon_2_move_1')}, ${v('pokemon_2_move_2')}, ${v('pokemon_2_move_3')}, ${v('pokemon_2_move_4')}
+    Level ${v('pokemon_2_level')}
+    PP_Ups ${v('pokemon_2_move_1_pp_ups')}, ${v('pokemon_2_move_2_pp_ups')}, ${v('pokemon_2_move_3_pp_ups')}, ${v('pokemon_2_move_4_pp_ups')}
+    EVs ${v('pokemon_2_ev_1')}, ${v('pokemon_2_ev_2')}, ${v('pokemon_2_ev_3')}, ${v('pokemon_2_ev_4')}, ${v('pokemon_2_ev_5')}, ${v('pokemon_2_ev_6')}
+    OT_ID ${v('pokemon_2_ot_tid')}, ${v('pokemon_2_ot_sid')}
+    IVs ${v('pokemon_2_iv_1')}, ${v('pokemon_2_iv_2')}, ${v('pokemon_2_iv_3')}, ${v('pokemon_2_iv_4')}, ${v('pokemon_2_iv_5')}, ${v('pokemon_2_iv_6')}, ${v('pokemon_2_ability')}
+    PV $${v('pokemon_2_pid')}
+    Text_EN "${nick2()}"11
+    Friendship ${v('pokemon_2_friendship')}
+
+    Pokemon ${v('pokemon_3_species')}
+    Holds ${v('pokemon_3_held_item')}
+    Moves ${v('pokemon_3_move_1')}, ${v('pokemon_3_move_2')}, ${v('pokemon_3_move_3')}, ${v('pokemon_3_move_4')}
+    Level ${v('pokemon_3_level')}
+    PP_Ups ${v('pokemon_3_move_1_pp_ups')}, ${v('pokemon_3_move_2_pp_ups')}, ${v('pokemon_3_move_3_pp_ups')}, ${v('pokemon_3_move_4_pp_ups')}
+    EVs ${v('pokemon_3_ev_1')}, ${v('pokemon_3_ev_2')}, ${v('pokemon_3_ev_3')}, ${v('pokemon_3_ev_4')}, ${v('pokemon_3_ev_5')}, ${v('pokemon_3_ev_6')}
+    OT_ID ${v('pokemon_3_ot_tid')}, ${v('pokemon_3_ot_sid')}
+    IVs ${v('pokemon_3_iv_1')}, ${v('pokemon_3_iv_2')}, ${v('pokemon_3_iv_3')}, ${v('pokemon_3_iv_4')}, ${v('pokemon_3_iv_5')}, ${v('pokemon_3_iv_6')}, ${v('pokemon_3_ability')}
+    PV $${v('pokemon_3_pid')}
+    Text_EN "${nick3()}"11
+    Friendship ${v('pokemon_3_friendship')}
+
+    End_Trainer
+`;
+
+		// Download the file
+		var a = window.document.createElement('a');
+		a.href = window.URL.createObjectURL(new Blob([content], {
+			type: 'text/asm'
+		}));
+		a.download = v('trainer_name').toLowerCase() + '.asm';
+
+		// Append anchor to body.
+		document.body.appendChild(a);
+		a.click();
+
+		// Remove anchor from body
+		document.body.removeChild(a);
+	}
+
+	insert_options(document.getElementById('trainer_class'), TRAINER_CLASSES);
+	insert_options(document.getElementById('intro_1_6'), EZ_CHAT);
+	insert_options(document.getElementById('intro_2_6'), EZ_CHAT);
+	insert_options(document.getElementById('intro_3_6'), EZ_CHAT);
+	insert_options(document.getElementById('intro_4_6'), EZ_CHAT);
+	insert_options(document.getElementById('intro_5_6'), EZ_CHAT);
+	insert_options(document.getElementById('intro_6_6'), EZ_CHAT);
+	insert_options(document.getElementById('victory_1_6'), EZ_CHAT);
+	insert_options(document.getElementById('victory_2_6'), EZ_CHAT);
+	insert_options(document.getElementById('victory_3_6'), EZ_CHAT);
+	insert_options(document.getElementById('victory_4_6'), EZ_CHAT);
+	insert_options(document.getElementById('victory_5_6'), EZ_CHAT);
+	insert_options(document.getElementById('victory_6_6'), EZ_CHAT);
+	insert_options(document.getElementById('defeat_1_6'), EZ_CHAT);
+	insert_options(document.getElementById('defeat_2_6'), EZ_CHAT);
+	insert_options(document.getElementById('defeat_3_6'), EZ_CHAT);
+	insert_options(document.getElementById('defeat_4_6'), EZ_CHAT);
+	insert_options(document.getElementById('defeat_5_6'), EZ_CHAT);
+	insert_options(document.getElementById('defeat_6_6'), EZ_CHAT);
+	insert_options(document.getElementById('pokemon_1_species'), SPECIES);
+	insert_options(document.getElementById('pokemon_1_held_item'), HELD_ITEMS);
+	insert_options(document.getElementById('pokemon_1_move_1'), MOVES);
+	insert_options(document.getElementById('pokemon_1_move_2'), MOVES);
+	insert_options(document.getElementById('pokemon_1_move_3'), MOVES);
+	insert_options(document.getElementById('pokemon_1_move_4'), MOVES);
+	insert_options(document.getElementById('pokemon_1_ability'), ABILITIES);
+	insert_options(document.getElementById('pokemon_2_species'), SPECIES);
+	insert_options(document.getElementById('pokemon_2_held_item'), HELD_ITEMS);
+	insert_options(document.getElementById('pokemon_2_move_1'), MOVES);
+	insert_options(document.getElementById('pokemon_2_move_2'), MOVES);
+	insert_options(document.getElementById('pokemon_2_move_3'), MOVES);
+	insert_options(document.getElementById('pokemon_2_move_4'), MOVES);
+	insert_options(document.getElementById('pokemon_2_ability'), ABILITIES);
+	insert_options(document.getElementById('pokemon_3_species'), SPECIES);
+	insert_options(document.getElementById('pokemon_3_held_item'), HELD_ITEMS);
+	insert_options(document.getElementById('pokemon_3_move_1'), MOVES);
+	insert_options(document.getElementById('pokemon_3_move_2'), MOVES);
+	insert_options(document.getElementById('pokemon_3_move_3'), MOVES);
+	insert_options(document.getElementById('pokemon_3_move_4'), MOVES);
+	insert_options(document.getElementById('pokemon_3_ability'), ABILITIES);
+
+	document.getElementById('root_form').addEventListener('submit', function(event) {
+		event.preventDefault();
+		generate();
+	});
+
+	document.getElementById('pokemon_1_pid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_1');
+	});
+	document.getElementById('pokemon_1_ot_tid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_1');
+	});
+	document.getElementById('pokemon_1_ot_sid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_1');
+	});
+	document.getElementById('pokemon_2_pid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_2');
+	});
+	document.getElementById('pokemon_2_ot_tid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_2');
+	});
+	document.getElementById('pokemon_2_ot_sid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_2');
+	});
+	document.getElementById('pokemon_3_pid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_3');
+	});
+	document.getElementById('pokemon_3_ot_tid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_3');
+	});
+	document.getElementById('pokemon_3_ot_sid').addEventListener('input', function(event) {
+		update_pokemon_notes('pokemon_3');
+	});</script></p></div></article></main><footer class="footer"><div class="footer__inner"><div class="footer__copyright"><p>© 2026 FexCollects</p></div></div></footer></div><script defer="defer" src="https://fexcollects.com/assets/js/scripts.min.js?v=c2232aa7558e9517946129d2a1b8c770"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
